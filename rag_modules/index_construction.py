@@ -26,7 +26,7 @@ class IndexConstructionModule:
         self.index_save_path = index_save_path
         self.embeddings = None
         self.vectorstore = None
-        self.setup_embeddingembeddings()
+        self.setup_embeddings()
     
     def setup_embeddings(self):
         """初始化嵌入模型"""
@@ -35,7 +35,7 @@ class IndexConstructionModule:
        
     # 本地 Ollama 嵌入（核心替换）
         self.embeddings = OllamaEmbeddings(
-            model="nomic-embed-text",
+            model="bge-m3:567m",
             base_url="http://localhost:11434"
         )
         logger.info("嵌入模型初始化完成")
@@ -79,7 +79,7 @@ class IndexConstructionModule:
         logger.info("新文档添加完成")
     '''
     实现索引缓存机制，在构建索引前先尝试从磁盘加载已有索引，如果加载成功则直接使用，否则才进行索引构建，并在构建完成后保存索引到磁盘。
-    
+
     '''
     def save_index(self):
         """

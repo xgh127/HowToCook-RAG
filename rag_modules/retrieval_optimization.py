@@ -8,7 +8,7 @@ from typing import List, Dict, Any
 from langchain_community.vectorstores import FAISS
 from langchain_community.retrievers import BM25Retriever
 from langchain_core.documents import Document
-
+import jieba
 logger = logging.getLogger(__name__)
 
 class RetrievalOptimizationModule:
@@ -35,17 +35,25 @@ class RetrievalOptimizationModule:
             search_type="similarity",
             search_kwargs={"k": 5}
         )
+        def chinese_preprocess(text: str) -> list:
+            return list(jieba.cut(text))
 
-        # BM25检索器
+        # 2. 初始化BM25，加上preprocess_func
         self.bm25_retriever = BM25Retriever.from_documents(
-            self.chunks,
-            k=5
+            documents=self.chunks,  # 这里用你清洗后的chunks即可
+            k=5,
+            preprocess_func=chinese_preprocess  # 绑定jieba分词
         )
 
-
-
         logger.info("检索器设置完成")
-    
+    # 测试用的，没啥含义
+    def test_retrievers(self, query: str):
+        """测试检索器，输出检索结果"""
+        logger.info(f"测试检索器 - 查询: {query}")
+
+        vector_results = self.vector_retriever.invoke(query)
+        bm25_results = self.bm25_retriever.invoke(query)
+        print("\n向量检索结果:")
     def hybrid_search(self, query: str, top_k: int = 3) -> List[Document]:
         """
         混合检索 - 结合向量检索和BM25检索，使用RRF重排

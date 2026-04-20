@@ -14,7 +14,7 @@ class RAGConfig:
     index_save_path: str = "./vector_index"
 
     # 模型配置
-    embedding_model: str = "BAAI/bge-small-zh-v1.5"
+    embedding_model: str = "shaw/demeta-embedding-zh"
     llm_model: str = "kimi-k2-0711-preview"
 
     # 检索配置

@@ -274,7 +274,34 @@ class RecipeRAGSystem:
                 break
 
         return filters
-    
+    def test_retrieval(self):
+        """
+        测试检索模块
+
+        Args:            query: 测试查询
+        """
+         # 初始化系统
+        self.initialize_system()
+        
+        # 构建知识库
+        self.build_knowledge_base()
+        while True:
+            try:
+                user_input = input("\n您的问题: ").strip()
+                if user_input.lower() in ['退出', 'quit', 'exit', '']:
+                    break
+                
+                # 询问是否使用流式输出
+                stream_choice = input("是否使用流式输出? (y/n, 默认y): ").strip().lower()
+                use_stream = stream_choice != 'n'
+                print("\n回答:")
+                self.retrieval_module.test_retrievers(user_input)
+                
+            except KeyboardInterrupt:
+                break
+            except Exception as e:
+                print(f"处理问题时出错: {e}")
+
     def search_by_category(self, category: str, query: str = "") -> List[str]:
         """
         按分类搜索菜品
@@ -349,7 +376,6 @@ class RecipeRAGSystem:
                 # 询问是否使用流式输出
                 stream_choice = input("是否使用流式输出? (y/n, 默认y): ").strip().lower()
                 use_stream = stream_choice != 'n'
-
                 print("\n回答:")
                 if use_stream:
                     # 流式输出
@@ -382,7 +408,7 @@ def main():
         rag_system = RecipeRAGSystem(config=config)
         
         # 运行交互式问答
-        rag_system.run_interactive()
+        rag_system.test_retrieval()
         
     except Exception as e:
         logger.error(f"系统运行出错: {e}")

@@ -1,12 +1,11 @@
 """
 索引构建模块
 """
-
 import logging
 from typing import List
 from pathlib import Path
 
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.embeddings import OllamaEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
 
@@ -27,18 +26,18 @@ class IndexConstructionModule:
         self.index_save_path = index_save_path
         self.embeddings = None
         self.vectorstore = None
-        self.setup_embeddings()
+        self.setup_embeddingembeddings()
     
     def setup_embeddings(self):
         """初始化嵌入模型"""
         logger.info(f"正在初始化嵌入模型: {self.model_name}")
         
-        self.embeddings = HuggingFaceEmbeddings(
-            model_name=self.model_name,
-            model_kwargs={'device': 'cpu'},
-            encode_kwargs={'normalize_embeddings': True}
+       
+    # 本地 Ollama 嵌入（核心替换）
+        self.embeddings = OllamaEmbeddings(
+            model="nomic-embed-text",
+            base_url="http://localhost:11434"
         )
-        
         logger.info("嵌入模型初始化完成")
     
     def build_vector_index(self, chunks: List[Document]) -> FAISS:
@@ -78,7 +77,10 @@ class IndexConstructionModule:
         logger.info(f"正在添加 {len(new_chunks)} 个新文档到索引...")
         self.vectorstore.add_documents(new_chunks)
         logger.info("新文档添加完成")
-
+    '''
+    实现索引缓存机制，在构建索引前先尝试从磁盘加载已有索引，如果加载成功则直接使用，否则才进行索引构建，并在构建完成后保存索引到磁盘。
+    
+    '''
     def save_index(self):
         """
         保存向量索引到配置的路径

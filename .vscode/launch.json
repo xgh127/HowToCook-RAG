@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Conda: cook-rag-1 - Debug RAG",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "args": [],
+            "console": "integratedTerminal",
+            "conda": "cook-rag-1",
+            "env": {},
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

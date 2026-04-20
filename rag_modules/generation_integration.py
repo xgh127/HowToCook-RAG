@@ -28,8 +28,8 @@ class GenerationIntegrationModule:
             api_key: API密钥
         """
         self.model_name = model_name
-        self.temperature = temperature
-        self.max_tokens = max_tokens
+        self.temperature = temperature # 生成温度，控制回答的创造性，值越高回答越多样化，值越低回答越确定
+        self.max_tokens = max_tokens # 生成回答的最大token数，设置合理的值可以确保回答的完整性，同时避免过长的回答导致性能问题
         self.api_key = api_key
         self.llm = None
         self.setup_llm()
@@ -207,6 +207,7 @@ class GenerationIntegrationModule:
     def query_router(self, query: str) -> str:
         """
         查询路由 - 根据查询类型选择不同的处理方式
+        通过LLM自动判断查询意图，比简单的关键词匹配更准确
 
         Args:
             query: 用户查询

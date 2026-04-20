@@ -22,8 +22,8 @@ class RetrievalOptimizationModule:
             vectorstore: FAISS向量存储
             chunks: 文档块列表
         """
-        self.vectorstore = vectorstore
-        self.chunks = chunks
+        self.vectorstore = vectorstore # FAISS向量存储对象
+        self.chunks = chunks # 文档块列表，用于BM25检索
         self.setup_retrievers()
 
     def setup_retrievers(self):

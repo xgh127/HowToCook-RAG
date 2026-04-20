@@ -102,6 +102,20 @@ class RecipeRAGSystem:
 
             # 2. 加载文档
             print("加载食谱文档...")
+            '''
+           Document(
+                page_content = "md文件内容..."
+                metadata =
+                {
+                    "source": "data/cook/dishes/aquatic/咖喱炒蟹.md",
+                    "parent_id": "UUID...",
+                    "doc_type": "parent",
+                    "dish_name": "咖喱炒蟹",
+                    "category": "水产",
+                    "difficulty": "中等"
+                }
+            )
+            '''
             self.data_module.load_documents()
 
             # 3. 文本分块
@@ -255,7 +269,7 @@ class RecipeRAGSystem:
         # 难度关键词
         difficulty_keywords = DataPreparationModule.get_supported_difficulties()
         for diff in sorted(difficulty_keywords, key=len, reverse=True):
-            if diff in query:
+            if diff in query:# 就是检查query里面有没有关键词
                 filters['difficulty'] = diff
                 break
 

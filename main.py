@@ -408,7 +408,7 @@ def main():
         rag_system = RecipeRAGSystem(config=config)
         
         # 运行交互式问答
-        rag_system.test_retrieval()
+        rag_system.run_interactive()
         
     except Exception as e:
         logger.error(f"系统运行出错: {e}")

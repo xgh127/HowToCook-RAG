@@ -1,0 +1,3365 @@
+{
+  "timestamp": "2026-04-28T00:45:30.817763",
+  "baseline": {
+    "overall": {
+      "recall@3": 0.631,
+      "precision@3": 0.433,
+      "recall@5": 0.642,
+      "precision@5": 0.334,
+      "recall@10": 0.653,
+      "precision@10": 0.303,
+      "mrr": 0.8
+    },
+    "by_query_type": {
+      "detail": [
+        {
+          "id": "r001",
+          "query": "宫保鸡丁怎么做？",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "宫保鸡丁"
+          ],
+          "retrieved_dishes": [
+            "宫保鸡丁",
+            "西红柿鸡蛋挂面",
+            "小炒藕丁",
+            "口水鸡",
+            "咖喱炒蟹",
+            "凉拌鸡丝"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 0.333,
+          "precision@5": 0.2,
+          "precision@10": 0.167,
+          "mrr": 1.0
+        },
+        {
+          "id": "r002",
+          "query": "水煮鱼需要哪些食材？",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "水煮鱼"
+          ],
+          "retrieved_dishes": [
+            "水煮鱼",
+            "昂刺鱼豆腐汤",
+            "清蒸鳜鱼",
+            "西红柿鸡蛋挂面",
+            "红烧鱼",
+            "红柚蛋糕",
+            "甜辣烤全翅",
+            "糖醋鲤鱼",
+            "咖喱肥牛"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 0.333,
+          "precision@5": 0.2,
+          "precision@10": 0.111,
+          "mrr": 1.0
+        },
+        {
+          "id": "r003",
+          "query": "咖喱炒蟹的制作步骤是什么？",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "咖喱炒蟹"
+          ],
+          "retrieved_dishes": [
+            "咖喱炒蟹",
+            "巴基斯坦牛肉咖喱",
+            "西红柿鸡蛋挂面",
+            "日式咖喱饭",
+            "鹰嘴豆炸饼",
+            "红芸豆拌饭",
+            "披萨饼皮"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 0.333,
+          "precision@5": 0.2,
+          "precision@10": 0.143,
+          "mrr": 1.0
+        },
+        {
+          "id": "r004",
+          "query": "红烧肉的做法",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "湖南家常红烧肉",
+            "徽派红烧肉",
+            "红烧肉"
+          ],
+          "retrieved_dishes": [
+            "湖南家常红烧肉",
+            "简易红烧肉",
+            "徽派红烧肉",
+            "南派红烧肉",
+            "红烧茄子",
+            "红芸豆拌饭"
+          ],
+          "recall@3": 0.667,
+          "recall@5": 0.667,
+          "recall@10": 0.667,
+          "precision@3": 0.667,
+          "precision@5": 0.4,
+          "precision@10": 0.333,
+          "mrr": 1.0
+        },
+        {
+          "id": "r009",
+          "query": "怎么做蛋糕",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "玛格丽特饼干",
+            "烤箱版巴斯克芝士蛋糕",
+            "烤蛋挞",
+            "提拉米苏",
+            "戚风蛋糕"
+          ],
+          "retrieved_dishes": [
+            "魔芋蛋糕",
+            "戚风蛋糕",
+            "咖喱炒蟹",
+            "微波炉蛋糕",
+            "红柚蛋糕"
+          ],
+          "recall@3": 0.2,
+          "recall@5": 0.2,
+          "recall@10": 0.2,
+          "precision@3": 0.333,
+          "precision@5": 0.2,
+          "precision@10": 0.2,
+          "mrr": 0.5
+        },
+        {
+          "id": "r010",
+          "query": "番茄炒蛋需要什么食材",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "西红柿炒鸡蛋"
+          ],
+          "retrieved_dishes": [
+            "西红柿炒鸡蛋",
+            "西红柿鸡蛋汤",
+            "美式炒蛋",
+            "西红柿鸡蛋挂面",
+            "蛋包饭",
+            "罗宋汤",
+            "西红柿豆腐汤羹",
+            "披萨饼皮",
+            "番茄牛肉蛋花汤"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 0.333,
+          "precision@5": 0.2,
+          "precision@10": 0.111,
+          "mrr": 1.0
+        },
+        {
+          "id": "r011",
+          "query": "鱼香肉丝怎么做",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "鱼香肉丝"
+          ],
+          "retrieved_dishes": [
+            "香干肉丝",
+            "鱼香肉丝",
+            "咖喱炒蟹",
+            "黄瓜皮蛋汤",
+            "西红柿鸡蛋挂面",
+            "水煮肉片",
+            "照烧鸡腿饭"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 0.333,
+          "precision@5": 0.2,
+          "precision@10": 0.143,
+          "mrr": 0.5
+        },
+        {
+          "id": "r013",
+          "query": "可乐鸡翅的做法",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "可乐鸡翅"
+          ],
+          "retrieved_dishes": [
+            "可乐鸡翅",
+            "可乐炒饭",
+            "烤鸡翅",
+            "空气炸锅鸡翅中"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 0.333,
+          "precision@5": 0.25,
+          "precision@10": 0.25,
+          "mrr": 1.0
+        },
+        {
+          "id": "r014",
+          "query": "怎么做糖醋排骨",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "糖醋排骨"
+          ],
+          "retrieved_dishes": [
+            "糖醋排骨",
+            "咖喱炒蟹",
+            "土豆炖排骨",
+            "黄瓜皮蛋汤",
+            "醉排骨",
+            "西红柿鸡蛋挂面",
+            "酱排骨",
+            "照烧鸡腿饭"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 0.333,
+          "precision@5": 0.2,
+          "precision@10": 0.125,
+          "mrr": 1.0
+        },
+        {
+          "id": "r016",
+          "query": "麻婆豆腐怎么做",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "麻婆豆腐"
+          ],
+          "retrieved_dishes": [
+            "麻婆豆腐",
+            "家常日本豆腐",
+            "咖喱炒蟹",
+            "黄瓜皮蛋汤",
+            "葱煎豆腐",
+            "西红柿鸡蛋挂面",
+            "脆皮豆腐",
+            "照烧鸡腿饭"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 0.333,
+          "precision@5": 0.2,
+          "precision@10": 0.125,
+          "mrr": 1.0
+        },
+        {
+          "id": "r018",
+          "query": "炒饭怎么做",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "蛋炒饭",
+            "扬州炒饭",
+            "可乐炒饭"
+          ],
+          "retrieved_dishes": [
+            "蛋炒饭",
+            "可乐炒饭",
+            "扬州炒饭",
+            "蛋包饭",
+            "咖喱炒蟹",
+            "黄瓜皮蛋汤"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 1.0,
+          "precision@5": 0.6,
+          "precision@10": 0.5,
+          "mrr": 1.0
+        },
+        {
+          "id": "r020",
+          "query": "蒜蓉虾的做法",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "蒜蓉虾"
+          ],
+          "retrieved_dishes": [
+            "蒜蓉虾",
+            "芥末黄油罗氏虾",
+            "芥末罗氏虾",
+            "蒜香黄油虾",
+            "蒜蓉西兰花",
+            "蒜蓉空心菜"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 0.333,
+          "precision@5": 0.2,
+          "precision@10": 0.167,
+          "mrr": 1.0
+        },
+        {
+          "id": "r021",
+          "query": "怎么做饺子",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "手工水饺",
+            "煎饺"
+          ],
+          "retrieved_dishes": [
+            "手工水饺",
+            "速冻水饺",
+            "煎饺",
+            "咖喱炒蟹"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 0.667,
+          "precision@5": 0.5,
+          "precision@10": 0.5,
+          "mrr": 1.0
+        },
+        {
+          "id": "r023",
+          "query": "清蒸鱼怎么做",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "葱油桂鱼",
+            "清蒸鲈鱼",
+            "清蒸鳜鱼"
+          ],
+          "retrieved_dishes": [
+            "清蒸鲈鱼",
+            "清蒸鳜鱼",
+            "白灼虾",
+            "咖喱炒蟹",
+            "黄瓜皮蛋汤",
+            "葱油桂鱼",
+            "西红柿鸡蛋挂面",
+            "照烧鸡腿饭"
+          ],
+          "recall@3": 0.667,
+          "recall@5": 0.667,
+          "recall@10": 1.0,
+          "precision@3": 0.667,
+          "precision@5": 0.4,
+          "precision@10": 0.375,
+          "mrr": 1.0
+        },
+        {
+          "id": "r024",
+          "query": "怎么做奶茶",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "印度奶茶",
+            "泰国手标红茶",
+            "奶茶"
+          ],
+          "retrieved_dishes": [
+            "印度奶茶",
+            "奶茶",
+            "咖喱炒蟹",
+            "杨枝甘露",
+            "泰国手标红茶",
+            "黄瓜皮蛋汤"
+          ],
+          "recall@3": 0.667,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 0.667,
+          "precision@5": 0.6,
+          "precision@10": 0.5,
+          "mrr": 1.0
+        },
+        {
+          "id": "r026",
+          "query": "土豆炖牛肉的做法",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "萝卜炖羊排",
+            "西红柿土豆炖牛肉",
+            "土豆炖排骨"
+          ],
+          "retrieved_dishes": [
+            "西红柿土豆炖牛肉",
+            "土豆炖排骨",
+            "拔丝土豆",
+            "蒲烧茄子",
+            "茄子炖土豆",
+            "印度土豆花菜"
+          ],
+          "recall@3": 0.667,
+          "recall@5": 0.667,
+          "recall@10": 0.667,
+          "precision@3": 0.667,
+          "precision@5": 0.4,
+          "precision@10": 0.333,
+          "mrr": 1.0
+        },
+        {
+          "id": "r029",
+          "query": "怎么做粥",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "桂圆红枣粥",
+            "小米粥",
+            "银耳莲子粥",
+            "皮蛋瘦肉粥",
+            "米粥"
+          ],
+          "retrieved_dishes": [
+            "桂圆红枣粥",
+            "腊八粥",
+            "米粥",
+            "咖喱炒蟹",
+            "黄瓜皮蛋汤",
+            "西红柿鸡蛋挂面"
+          ],
+          "recall@3": 0.4,
+          "recall@5": 0.4,
+          "recall@10": 0.4,
+          "precision@3": 0.667,
+          "precision@5": 0.4,
+          "precision@10": 0.333,
+          "mrr": 1.0
+        }
+      ],
+      "list": [
+        {
+          "id": "r005",
+          "query": "推荐几个简单的素菜",
+          "query_type": "list",
+          "relevant_dishes": [
+            "鸡蛋花",
+            "炒青菜",
+            "蚝油生菜",
+            "素炒豆角",
+            "清炒花菜"
+          ],
+          "retrieved_dishes": [
+            "咸肉菜饭",
+            "清炒花菜",
+            "韩式拌饭",
+            "印度土豆花菜",
+            "水煮肉片",
+            "上汤娃娃菜",
+            "麻辣香锅",
+            "卤菜",
+            "澳门湿版免治牛肉饭",
+            "麻婆豆腐"
+          ],
+          "filter_accuracy@3": 0.333,
+          "category_accuracy@3": 0.333,
+          "recall@3": 0.333,
+          "precision@3": 0.333,
+          "recall@5": 0.333,
+          "precision@5": 0.333,
+          "recall@10": 0.333,
+          "precision@10": 0.333,
+          "mrr": 1.0
+        },
+        {
+          "id": "r006",
+          "query": "适合健身吃的家常菜",
+          "query_type": "list",
+          "relevant_dishes": [
+            "燕麦鸡蛋饼",
+            "瘦肉土豆片",
+            "清蒸鲈鱼",
+            "白灼虾",
+            "西葫芦炒鸡蛋"
+          ],
+          "retrieved_dishes": [
+            "韩式拌饭",
+            "瘦肉土豆片",
+            "咸肉菜饭",
+            "奶酪培根通心粉",
+            "麻辣香锅",
+            "燕麦鸡蛋饼",
+            "水煮肉片",
+            "溏心蛋",
+            "简易红烧肉",
+            "香干芹菜炒肉"
+          ],
+          "filter_accuracy@3": 0.333,
+          "category_accuracy@3": 0.333,
+          "recall@3": 0.333,
+          "precision@3": 0.333,
+          "recall@5": 0.333,
+          "precision@5": 0.333,
+          "recall@10": 0.333,
+          "precision@10": 0.333,
+          "mrr": 1.0
+        },
+        {
+          "id": "r007",
+          "query": "有什么川菜推荐",
+          "query_type": "list",
+          "relevant_dishes": [
+            "麻婆豆腐",
+            "鱼香肉丝",
+            "回锅肉",
+            "宫保鸡丁",
+            "水煮鱼",
+            "水煮牛肉"
+          ],
+          "retrieved_dishes": [
+            "宫保鸡丁",
+            "麻辣香锅",
+            "柱候牛腩",
+            "葱油桂鱼",
+            "干煸仔鸡",
+            "糖醋里脊",
+            "蚂蚁上树",
+            "红芸豆拌饭",
+            "炸酱面"
+          ],
+          "filter_accuracy@3": 1.0,
+          "category_accuracy@3": 1.0,
+          "recall@3": 1.0,
+          "precision@3": 1.0,
+          "recall@5": 1.0,
+          "precision@5": 1.0,
+          "recall@10": 1.0,
+          "precision@10": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "id": "r008",
+          "query": "早餐吃什么好",
+          "query_type": "list",
+          "relevant_dishes": [
+            "燕麦鸡蛋饼",
+            "溏心蛋",
+            "牛奶燕麦",
+            "太阳蛋",
+            "手抓饼"
+          ],
+          "retrieved_dishes": [
+            "牛奶燕麦",
+            "皮蛋瘦肉粥",
+            "燕麦鸡蛋饼",
+            "披萨饼皮",
+            "贵州辣子鸡",
+            "炒馍",
+            "吐司果酱",
+            "金枪鱼酱三明治"
+          ],
+          "filter_accuracy@3": 0.667,
+          "category_accuracy@3": 0.667,
+          "recall@3": 0.667,
+          "precision@3": 0.667,
+          "recall@5": 0.667,
+          "precision@5": 0.667,
+          "recall@10": 0.667,
+          "precision@10": 0.667,
+          "mrr": 1.0
+        },
+        {
+          "id": "r012",
+          "query": "推荐几道汤品",
+          "query_type": "list",
+          "relevant_dishes": [
+            "排骨山药玉米汤",
+            "紫菜蛋花汤",
+            "羊肉汤",
+            "西红柿鸡蛋汤",
+            "玉米排骨汤"
+          ],
+          "retrieved_dishes": [
+            "排骨山药玉米汤",
+            "宫保鸡丁",
+            "黄瓜皮蛋汤",
+            "酸梅汤",
+            "罗宋汤",
+            "日式肥牛丼饭",
+            "朱雀汤",
+            "咕噜肉",
+            "牛排"
+          ],
+          "filter_accuracy@3": 0.667,
+          "category_accuracy@3": 0.667,
+          "recall@3": 0.667,
+          "precision@3": 0.667,
+          "recall@5": 0.667,
+          "precision@5": 0.667,
+          "recall@10": 0.667,
+          "precision@10": 0.667,
+          "mrr": 1.0
+        },
+        {
+          "id": "r015",
+          "query": "简单的海鲜做法",
+          "query_type": "list",
+          "relevant_dishes": [
+            "黄油煎虾",
+            "清蒸鲈鱼",
+            "清蒸生蚝",
+            "白灼虾"
+          ],
+          "retrieved_dishes": [
+            "芥末黄油罗氏虾",
+            "白灼虾",
+            "蒜香黄油虾",
+            "蒜蓉虾",
+            "白菜猪肉炖粉条",
+            "蚝油生菜",
+            "蒜苔炒肉末",
+            "烤鱼",
+            "宫保鸡丁"
+          ],
+          "filter_accuracy@3": 0.667,
+          "category_accuracy@3": 1.0,
+          "recall@3": 0.667,
+          "precision@3": 0.667,
+          "recall@5": 0.667,
+          "precision@5": 0.667,
+          "recall@10": 0.667,
+          "precision@10": 0.667,
+          "mrr": 1.0
+        },
+        {
+          "id": "r017",
+          "query": "推荐适合新手的菜",
+          "query_type": "list",
+          "relevant_dishes": [
+            "鸡蛋花",
+            "炒青菜",
+            "凉拌黄瓜",
+            "蚝油生菜",
+            "西红柿炒鸡蛋"
+          ],
+          "retrieved_dishes": [
+            "玉米排骨汤",
+            "辣椒炒肉",
+            "糖醋鲤鱼",
+            "白灼菜心",
+            "烙饼",
+            "蚝油生菜",
+            "微波炉荷包蛋",
+            "水煮肉片",
+            "空气炸锅照烧鸡饭"
+          ],
+          "filter_accuracy@3": 0.0,
+          "category_accuracy@3": 0.333,
+          "recall@3": 0.0,
+          "precision@3": 0.0,
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "recall@10": 0.0,
+          "precision@10": 0.0,
+          "mrr": 0
+        },
+        {
+          "id": "r019",
+          "query": "有什么甜品推荐",
+          "query_type": "list",
+          "relevant_dishes": [
+            "烤蛋挞",
+            "提拉米苏",
+            "酸奶意式奶冻",
+            "戚风蛋糕",
+            "龟苓膏"
+          ],
+          "retrieved_dishes": [
+            "胡萝卜甜糕",
+            "肉蛋盖饭",
+            "葱油桂鱼",
+            "芋泥雪媚娘",
+            "反沙芋头",
+            "鸡蛋花",
+            "炸酱面",
+            "玛格丽特饼干",
+            "牛排"
+          ],
+          "filter_accuracy@3": 0.333,
+          "category_accuracy@3": 0.333,
+          "recall@3": 0.333,
+          "precision@3": 0.333,
+          "recall@5": 0.333,
+          "precision@5": 0.333,
+          "recall@10": 0.333,
+          "precision@10": 0.333,
+          "mrr": 1.0
+        },
+        {
+          "id": "r022",
+          "query": "推荐几道快手菜",
+          "query_type": "list",
+          "relevant_dishes": [
+            "炒青菜",
+            "凉拌黄瓜",
+            "蛋炒饭",
+            "西红柿炒鸡蛋",
+            "蒜蓉生菜"
+          ],
+          "retrieved_dishes": [
+            "姜葱捞鸡",
+            "凉拌鸡丝",
+            "宫保鸡丁",
+            "蒸花卷",
+            "麻辣香锅",
+            "英式司康",
+            "澳门湿版免治牛肉饭",
+            "照烧鸡腿饭"
+          ],
+          "filter_accuracy@3": 0.0,
+          "category_accuracy@3": 0.0,
+          "recall@3": 0.0,
+          "precision@3": 0.0,
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "recall@10": 0.0,
+          "precision@10": 0.0,
+          "mrr": 0
+        },
+        {
+          "id": "r025",
+          "query": "推荐几道下酒菜",
+          "query_type": "list",
+          "relevant_dishes": [
+            "卤菜",
+            "拍黄瓜",
+            "口水鸡",
+            "花生米",
+            "凉拌木耳"
+          ],
+          "retrieved_dishes": [
+            "红芸豆拌饭",
+            "猪皮冻",
+            "老妈蹄花",
+            "卤菜",
+            "红烧鱼",
+            "排骨山药玉米汤",
+            "无骨鸡爪",
+            "牛排",
+            "回锅肉",
+            "麻婆豆腐"
+          ],
+          "filter_accuracy@3": 0.0,
+          "category_accuracy@3": 0.667,
+          "recall@3": 0.0,
+          "precision@3": 0.0,
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "recall@10": 0.0,
+          "precision@10": 0.0,
+          "mrr": 0
+        },
+        {
+          "id": "r027",
+          "query": "怎么做凉拌菜",
+          "query_type": "list",
+          "relevant_dishes": [
+            "皮蛋豆腐",
+            "凉拌黄瓜",
+            "凉拌鸡丝",
+            "凉拌豆腐",
+            "凉拌木耳"
+          ],
+          "retrieved_dishes": [
+            "凉拌油麦菜",
+            "葱油",
+            "凉拌黄瓜",
+            "芹菜拌茶树菇",
+            "凉拌豆腐",
+            "咖喱炒蟹",
+            "凉拌莴笋",
+            "黄瓜皮蛋汤",
+            "卤菜",
+            "西红柿鸡蛋挂面"
+          ],
+          "filter_accuracy@3": 0.0,
+          "category_accuracy@3": 0.667,
+          "recall@3": 0.0,
+          "precision@3": 0.0,
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "recall@10": 0.0,
+          "precision@10": 0.0,
+          "mrr": 0
+        },
+        {
+          "id": "r028",
+          "query": "烤箱可以做什么",
+          "query_type": "list",
+          "relevant_dishes": [
+            "玛格丽特饼干",
+            "烤蛋挞",
+            "烤箱版巴斯克芝士蛋糕",
+            "烤鸡翅",
+            "戚风蛋糕"
+          ],
+          "retrieved_dishes": [
+            "烤箱版巴斯克芝士蛋糕",
+            "魔芋蛋糕",
+            "基础牛奶面包",
+            "芋泥雪媚娘",
+            "烤蛋挞",
+            "葱油桂鱼",
+            "无厨师机蜂蜜面包",
+            "西红柿鸡蛋挂面"
+          ],
+          "filter_accuracy@3": 0.0,
+          "category_accuracy@3": 0.667,
+          "recall@3": 0.0,
+          "precision@3": 0.0,
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "recall@10": 0.0,
+          "precision@10": 0.0,
+          "mrr": 0
+        },
+        {
+          "id": "r030",
+          "query": "推荐几道硬菜",
+          "query_type": "list",
+          "relevant_dishes": [
+            "梅菜扣肉",
+            "红烧肉",
+            "宫保鸡丁",
+            "水煮鱼",
+            "糖醋排骨"
+          ],
+          "retrieved_dishes": [
+            "咸肉菜饭",
+            "羊排焖面",
+            "老干妈拌面",
+            "排骨山药玉米汤",
+            "麻辣香锅",
+            "牛排",
+            "麻婆豆腐",
+            "凉皮",
+            "红烧鸡翅"
+          ],
+          "filter_accuracy@3": 0.667,
+          "category_accuracy@3": 0.333,
+          "recall@3": 0.667,
+          "precision@3": 0.667,
+          "recall@5": 0.667,
+          "precision@5": 0.667,
+          "recall@10": 0.667,
+          "precision@10": 0.667,
+          "mrr": 1.0
+        }
+      ]
+    },
+    "per_query": [
+      {
+        "id": "r001",
+        "query": "宫保鸡丁怎么做？",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "宫保鸡丁"
+        ],
+        "retrieved_dishes": [
+          "宫保鸡丁",
+          "西红柿鸡蛋挂面",
+          "小炒藕丁",
+          "口水鸡",
+          "咖喱炒蟹",
+          "凉拌鸡丝"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 0.333,
+        "precision@5": 0.2,
+        "precision@10": 0.167,
+        "mrr": 1.0
+      },
+      {
+        "id": "r002",
+        "query": "水煮鱼需要哪些食材？",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "水煮鱼"
+        ],
+        "retrieved_dishes": [
+          "水煮鱼",
+          "昂刺鱼豆腐汤",
+          "清蒸鳜鱼",
+          "西红柿鸡蛋挂面",
+          "红烧鱼",
+          "红柚蛋糕",
+          "甜辣烤全翅",
+          "糖醋鲤鱼",
+          "咖喱肥牛"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 0.333,
+        "precision@5": 0.2,
+        "precision@10": 0.111,
+        "mrr": 1.0
+      },
+      {
+        "id": "r003",
+        "query": "咖喱炒蟹的制作步骤是什么？",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "咖喱炒蟹"
+        ],
+        "retrieved_dishes": [
+          "咖喱炒蟹",
+          "巴基斯坦牛肉咖喱",
+          "西红柿鸡蛋挂面",
+          "日式咖喱饭",
+          "鹰嘴豆炸饼",
+          "红芸豆拌饭",
+          "披萨饼皮"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 0.333,
+        "precision@5": 0.2,
+        "precision@10": 0.143,
+        "mrr": 1.0
+      },
+      {
+        "id": "r004",
+        "query": "红烧肉的做法",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "湖南家常红烧肉",
+          "徽派红烧肉",
+          "红烧肉"
+        ],
+        "retrieved_dishes": [
+          "湖南家常红烧肉",
+          "简易红烧肉",
+          "徽派红烧肉",
+          "南派红烧肉",
+          "红烧茄子",
+          "红芸豆拌饭"
+        ],
+        "recall@3": 0.667,
+        "recall@5": 0.667,
+        "recall@10": 0.667,
+        "precision@3": 0.667,
+        "precision@5": 0.4,
+        "precision@10": 0.333,
+        "mrr": 1.0
+      },
+      {
+        "id": "r005",
+        "query": "推荐几个简单的素菜",
+        "query_type": "list",
+        "relevant_dishes": [
+          "鸡蛋花",
+          "炒青菜",
+          "蚝油生菜",
+          "素炒豆角",
+          "清炒花菜"
+        ],
+        "retrieved_dishes": [
+          "咸肉菜饭",
+          "清炒花菜",
+          "韩式拌饭",
+          "印度土豆花菜",
+          "水煮肉片",
+          "上汤娃娃菜",
+          "麻辣香锅",
+          "卤菜",
+          "澳门湿版免治牛肉饭",
+          "麻婆豆腐"
+        ],
+        "filter_accuracy@3": 0.333,
+        "category_accuracy@3": 0.333,
+        "recall@3": 0.333,
+        "precision@3": 0.333,
+        "recall@5": 0.333,
+        "precision@5": 0.333,
+        "recall@10": 0.333,
+        "precision@10": 0.333,
+        "mrr": 1.0
+      },
+      {
+        "id": "r006",
+        "query": "适合健身吃的家常菜",
+        "query_type": "list",
+        "relevant_dishes": [
+          "燕麦鸡蛋饼",
+          "瘦肉土豆片",
+          "清蒸鲈鱼",
+          "白灼虾",
+          "西葫芦炒鸡蛋"
+        ],
+        "retrieved_dishes": [
+          "韩式拌饭",
+          "瘦肉土豆片",
+          "咸肉菜饭",
+          "奶酪培根通心粉",
+          "麻辣香锅",
+          "燕麦鸡蛋饼",
+          "水煮肉片",
+          "溏心蛋",
+          "简易红烧肉",
+          "香干芹菜炒肉"
+        ],
+        "filter_accuracy@3": 0.333,
+        "category_accuracy@3": 0.333,
+        "recall@3": 0.333,
+        "precision@3": 0.333,
+        "recall@5": 0.333,
+        "precision@5": 0.333,
+        "recall@10": 0.333,
+        "precision@10": 0.333,
+        "mrr": 1.0
+      },
+      {
+        "id": "r007",
+        "query": "有什么川菜推荐",
+        "query_type": "list",
+        "relevant_dishes": [
+          "麻婆豆腐",
+          "鱼香肉丝",
+          "回锅肉",
+          "宫保鸡丁",
+          "水煮鱼",
+          "水煮牛肉"
+        ],
+        "retrieved_dishes": [
+          "宫保鸡丁",
+          "麻辣香锅",
+          "柱候牛腩",
+          "葱油桂鱼",
+          "干煸仔鸡",
+          "糖醋里脊",
+          "蚂蚁上树",
+          "红芸豆拌饭",
+          "炸酱面"
+        ],
+        "filter_accuracy@3": 1.0,
+        "category_accuracy@3": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 1.0,
+        "recall@10": 1.0,
+        "precision@10": 1.0,
+        "mrr": 1.0
+      },
+      {
+        "id": "r008",
+        "query": "早餐吃什么好",
+        "query_type": "list",
+        "relevant_dishes": [
+          "燕麦鸡蛋饼",
+          "溏心蛋",
+          "牛奶燕麦",
+          "太阳蛋",
+          "手抓饼"
+        ],
+        "retrieved_dishes": [
+          "牛奶燕麦",
+          "皮蛋瘦肉粥",
+          "燕麦鸡蛋饼",
+          "披萨饼皮",
+          "贵州辣子鸡",
+          "炒馍",
+          "吐司果酱",
+          "金枪鱼酱三明治"
+        ],
+        "filter_accuracy@3": 0.667,
+        "category_accuracy@3": 0.667,
+        "recall@3": 0.667,
+        "precision@3": 0.667,
+        "recall@5": 0.667,
+        "precision@5": 0.667,
+        "recall@10": 0.667,
+        "precision@10": 0.667,
+        "mrr": 1.0
+      },
+      {
+        "id": "r009",
+        "query": "怎么做蛋糕",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "玛格丽特饼干",
+          "烤箱版巴斯克芝士蛋糕",
+          "烤蛋挞",
+          "提拉米苏",
+          "戚风蛋糕"
+        ],
+        "retrieved_dishes": [
+          "魔芋蛋糕",
+          "戚风蛋糕",
+          "咖喱炒蟹",
+          "微波炉蛋糕",
+          "红柚蛋糕"
+        ],
+        "recall@3": 0.2,
+        "recall@5": 0.2,
+        "recall@10": 0.2,
+        "precision@3": 0.333,
+        "precision@5": 0.2,
+        "precision@10": 0.2,
+        "mrr": 0.5
+      },
+      {
+        "id": "r010",
+        "query": "番茄炒蛋需要什么食材",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "西红柿炒鸡蛋"
+        ],
+        "retrieved_dishes": [
+          "西红柿炒鸡蛋",
+          "西红柿鸡蛋汤",
+          "美式炒蛋",
+          "西红柿鸡蛋挂面",
+          "蛋包饭",
+          "罗宋汤",
+          "西红柿豆腐汤羹",
+          "披萨饼皮",
+          "番茄牛肉蛋花汤"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 0.333,
+        "precision@5": 0.2,
+        "precision@10": 0.111,
+        "mrr": 1.0
+      },
+      {
+        "id": "r011",
+        "query": "鱼香肉丝怎么做",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "鱼香肉丝"
+        ],
+        "retrieved_dishes": [
+          "香干肉丝",
+          "鱼香肉丝",
+          "咖喱炒蟹",
+          "黄瓜皮蛋汤",
+          "西红柿鸡蛋挂面",
+          "水煮肉片",
+          "照烧鸡腿饭"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 0.333,
+        "precision@5": 0.2,
+        "precision@10": 0.143,
+        "mrr": 0.5
+      },
+      {
+        "id": "r012",
+        "query": "推荐几道汤品",
+        "query_type": "list",
+        "relevant_dishes": [
+          "排骨山药玉米汤",
+          "紫菜蛋花汤",
+          "羊肉汤",
+          "西红柿鸡蛋汤",
+          "玉米排骨汤"
+        ],
+        "retrieved_dishes": [
+          "排骨山药玉米汤",
+          "宫保鸡丁",
+          "黄瓜皮蛋汤",
+          "酸梅汤",
+          "罗宋汤",
+          "日式肥牛丼饭",
+          "朱雀汤",
+          "咕噜肉",
+          "牛排"
+        ],
+        "filter_accuracy@3": 0.667,
+        "category_accuracy@3": 0.667,
+        "recall@3": 0.667,
+        "precision@3": 0.667,
+        "recall@5": 0.667,
+        "precision@5": 0.667,
+        "recall@10": 0.667,
+        "precision@10": 0.667,
+        "mrr": 1.0
+      },
+      {
+        "id": "r013",
+        "query": "可乐鸡翅的做法",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "可乐鸡翅"
+        ],
+        "retrieved_dishes": [
+          "可乐鸡翅",
+          "可乐炒饭",
+          "烤鸡翅",
+          "空气炸锅鸡翅中"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 0.333,
+        "precision@5": 0.25,
+        "precision@10": 0.25,
+        "mrr": 1.0
+      },
+      {
+        "id": "r014",
+        "query": "怎么做糖醋排骨",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "糖醋排骨"
+        ],
+        "retrieved_dishes": [
+          "糖醋排骨",
+          "咖喱炒蟹",
+          "土豆炖排骨",
+          "黄瓜皮蛋汤",
+          "醉排骨",
+          "西红柿鸡蛋挂面",
+          "酱排骨",
+          "照烧鸡腿饭"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 0.333,
+        "precision@5": 0.2,
+        "precision@10": 0.125,
+        "mrr": 1.0
+      },
+      {
+        "id": "r015",
+        "query": "简单的海鲜做法",
+        "query_type": "list",
+        "relevant_dishes": [
+          "黄油煎虾",
+          "清蒸鲈鱼",
+          "清蒸生蚝",
+          "白灼虾"
+        ],
+        "retrieved_dishes": [
+          "芥末黄油罗氏虾",
+          "白灼虾",
+          "蒜香黄油虾",
+          "蒜蓉虾",
+          "白菜猪肉炖粉条",
+          "蚝油生菜",
+          "蒜苔炒肉末",
+          "烤鱼",
+          "宫保鸡丁"
+        ],
+        "filter_accuracy@3": 0.667,
+        "category_accuracy@3": 1.0,
+        "recall@3": 0.667,
+        "precision@3": 0.667,
+        "recall@5": 0.667,
+        "precision@5": 0.667,
+        "recall@10": 0.667,
+        "precision@10": 0.667,
+        "mrr": 1.0
+      },
+      {
+        "id": "r016",
+        "query": "麻婆豆腐怎么做",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "麻婆豆腐"
+        ],
+        "retrieved_dishes": [
+          "麻婆豆腐",
+          "家常日本豆腐",
+          "咖喱炒蟹",
+          "黄瓜皮蛋汤",
+          "葱煎豆腐",
+          "西红柿鸡蛋挂面",
+          "脆皮豆腐",
+          "照烧鸡腿饭"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 0.333,
+        "precision@5": 0.2,
+        "precision@10": 0.125,
+        "mrr": 1.0
+      },
+      {
+        "id": "r017",
+        "query": "推荐适合新手的菜",
+        "query_type": "list",
+        "relevant_dishes": [
+          "鸡蛋花",
+          "炒青菜",
+          "凉拌黄瓜",
+          "蚝油生菜",
+          "西红柿炒鸡蛋"
+        ],
+        "retrieved_dishes": [
+          "玉米排骨汤",
+          "辣椒炒肉",
+          "糖醋鲤鱼",
+          "白灼菜心",
+          "烙饼",
+          "蚝油生菜",
+          "微波炉荷包蛋",
+          "水煮肉片",
+          "空气炸锅照烧鸡饭"
+        ],
+        "filter_accuracy@3": 0.0,
+        "category_accuracy@3": 0.333,
+        "recall@3": 0.0,
+        "precision@3": 0.0,
+        "recall@5": 0.0,
+        "precision@5": 0.0,
+        "recall@10": 0.0,
+        "precision@10": 0.0,
+        "mrr": 0
+      },
+      {
+        "id": "r018",
+        "query": "炒饭怎么做",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "蛋炒饭",
+          "扬州炒饭",
+          "可乐炒饭"
+        ],
+        "retrieved_dishes": [
+          "蛋炒饭",
+          "可乐炒饭",
+          "扬州炒饭",
+          "蛋包饭",
+          "咖喱炒蟹",
+          "黄瓜皮蛋汤"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 1.0,
+        "precision@5": 0.6,
+        "precision@10": 0.5,
+        "mrr": 1.0
+      },
+      {
+        "id": "r019",
+        "query": "有什么甜品推荐",
+        "query_type": "list",
+        "relevant_dishes": [
+          "烤蛋挞",
+          "提拉米苏",
+          "酸奶意式奶冻",
+          "戚风蛋糕",
+          "龟苓膏"
+        ],
+        "retrieved_dishes": [
+          "胡萝卜甜糕",
+          "肉蛋盖饭",
+          "葱油桂鱼",
+          "芋泥雪媚娘",
+          "反沙芋头",
+          "鸡蛋花",
+          "炸酱面",
+          "玛格丽特饼干",
+          "牛排"
+        ],
+        "filter_accuracy@3": 0.333,
+        "category_accuracy@3": 0.333,
+        "recall@3": 0.333,
+        "precision@3": 0.333,
+        "recall@5": 0.333,
+        "precision@5": 0.333,
+        "recall@10": 0.333,
+        "precision@10": 0.333,
+        "mrr": 1.0
+      },
+      {
+        "id": "r020",
+        "query": "蒜蓉虾的做法",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "蒜蓉虾"
+        ],
+        "retrieved_dishes": [
+          "蒜蓉虾",
+          "芥末黄油罗氏虾",
+          "芥末罗氏虾",
+          "蒜香黄油虾",
+          "蒜蓉西兰花",
+          "蒜蓉空心菜"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 0.333,
+        "precision@5": 0.2,
+        "precision@10": 0.167,
+        "mrr": 1.0
+      },
+      {
+        "id": "r021",
+        "query": "怎么做饺子",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "手工水饺",
+          "煎饺"
+        ],
+        "retrieved_dishes": [
+          "手工水饺",
+          "速冻水饺",
+          "煎饺",
+          "咖喱炒蟹"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 0.667,
+        "precision@5": 0.5,
+        "precision@10": 0.5,
+        "mrr": 1.0
+      },
+      {
+        "id": "r022",
+        "query": "推荐几道快手菜",
+        "query_type": "list",
+        "relevant_dishes": [
+          "炒青菜",
+          "凉拌黄瓜",
+          "蛋炒饭",
+          "西红柿炒鸡蛋",
+          "蒜蓉生菜"
+        ],
+        "retrieved_dishes": [
+          "姜葱捞鸡",
+          "凉拌鸡丝",
+          "宫保鸡丁",
+          "蒸花卷",
+          "麻辣香锅",
+          "英式司康",
+          "澳门湿版免治牛肉饭",
+          "照烧鸡腿饭"
+        ],
+        "filter_accuracy@3": 0.0,
+        "category_accuracy@3": 0.0,
+        "recall@3": 0.0,
+        "precision@3": 0.0,
+        "recall@5": 0.0,
+        "precision@5": 0.0,
+        "recall@10": 0.0,
+        "precision@10": 0.0,
+        "mrr": 0
+      },
+      {
+        "id": "r023",
+        "query": "清蒸鱼怎么做",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "葱油桂鱼",
+          "清蒸鲈鱼",
+          "清蒸鳜鱼"
+        ],
+        "retrieved_dishes": [
+          "清蒸鲈鱼",
+          "清蒸鳜鱼",
+          "白灼虾",
+          "咖喱炒蟹",
+          "黄瓜皮蛋汤",
+          "葱油桂鱼",
+          "西红柿鸡蛋挂面",
+          "照烧鸡腿饭"
+        ],
+        "recall@3": 0.667,
+        "recall@5": 0.667,
+        "recall@10": 1.0,
+        "precision@3": 0.667,
+        "precision@5": 0.4,
+        "precision@10": 0.375,
+        "mrr": 1.0
+      },
+      {
+        "id": "r024",
+        "query": "怎么做奶茶",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "印度奶茶",
+          "泰国手标红茶",
+          "奶茶"
+        ],
+        "retrieved_dishes": [
+          "印度奶茶",
+          "奶茶",
+          "咖喱炒蟹",
+          "杨枝甘露",
+          "泰国手标红茶",
+          "黄瓜皮蛋汤"
+        ],
+        "recall@3": 0.667,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 0.667,
+        "precision@5": 0.6,
+        "precision@10": 0.5,
+        "mrr": 1.0
+      },
+      {
+        "id": "r025",
+        "query": "推荐几道下酒菜",
+        "query_type": "list",
+        "relevant_dishes": [
+          "卤菜",
+          "拍黄瓜",
+          "口水鸡",
+          "花生米",
+          "凉拌木耳"
+        ],
+        "retrieved_dishes": [
+          "红芸豆拌饭",
+          "猪皮冻",
+          "老妈蹄花",
+          "卤菜",
+          "红烧鱼",
+          "排骨山药玉米汤",
+          "无骨鸡爪",
+          "牛排",
+          "回锅肉",
+          "麻婆豆腐"
+        ],
+        "filter_accuracy@3": 0.0,
+        "category_accuracy@3": 0.667,
+        "recall@3": 0.0,
+        "precision@3": 0.0,
+        "recall@5": 0.0,
+        "precision@5": 0.0,
+        "recall@10": 0.0,
+        "precision@10": 0.0,
+        "mrr": 0
+      },
+      {
+        "id": "r026",
+        "query": "土豆炖牛肉的做法",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "萝卜炖羊排",
+          "西红柿土豆炖牛肉",
+          "土豆炖排骨"
+        ],
+        "retrieved_dishes": [
+          "西红柿土豆炖牛肉",
+          "土豆炖排骨",
+          "拔丝土豆",
+          "蒲烧茄子",
+          "茄子炖土豆",
+          "印度土豆花菜"
+        ],
+        "recall@3": 0.667,
+        "recall@5": 0.667,
+        "recall@10": 0.667,
+        "precision@3": 0.667,
+        "precision@5": 0.4,
+        "precision@10": 0.333,
+        "mrr": 1.0
+      },
+      {
+        "id": "r027",
+        "query": "怎么做凉拌菜",
+        "query_type": "list",
+        "relevant_dishes": [
+          "皮蛋豆腐",
+          "凉拌黄瓜",
+          "凉拌鸡丝",
+          "凉拌豆腐",
+          "凉拌木耳"
+        ],
+        "retrieved_dishes": [
+          "凉拌油麦菜",
+          "葱油",
+          "凉拌黄瓜",
+          "芹菜拌茶树菇",
+          "凉拌豆腐",
+          "咖喱炒蟹",
+          "凉拌莴笋",
+          "黄瓜皮蛋汤",
+          "卤菜",
+          "西红柿鸡蛋挂面"
+        ],
+        "filter_accuracy@3": 0.0,
+        "category_accuracy@3": 0.667,
+        "recall@3": 0.0,
+        "precision@3": 0.0,
+        "recall@5": 0.0,
+        "precision@5": 0.0,
+        "recall@10": 0.0,
+        "precision@10": 0.0,
+        "mrr": 0
+      },
+      {
+        "id": "r028",
+        "query": "烤箱可以做什么",
+        "query_type": "list",
+        "relevant_dishes": [
+          "玛格丽特饼干",
+          "烤蛋挞",
+          "烤箱版巴斯克芝士蛋糕",
+          "烤鸡翅",
+          "戚风蛋糕"
+        ],
+        "retrieved_dishes": [
+          "烤箱版巴斯克芝士蛋糕",
+          "魔芋蛋糕",
+          "基础牛奶面包",
+          "芋泥雪媚娘",
+          "烤蛋挞",
+          "葱油桂鱼",
+          "无厨师机蜂蜜面包",
+          "西红柿鸡蛋挂面"
+        ],
+        "filter_accuracy@3": 0.0,
+        "category_accuracy@3": 0.667,
+        "recall@3": 0.0,
+        "precision@3": 0.0,
+        "recall@5": 0.0,
+        "precision@5": 0.0,
+        "recall@10": 0.0,
+        "precision@10": 0.0,
+        "mrr": 0
+      },
+      {
+        "id": "r029",
+        "query": "怎么做粥",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "桂圆红枣粥",
+          "小米粥",
+          "银耳莲子粥",
+          "皮蛋瘦肉粥",
+          "米粥"
+        ],
+        "retrieved_dishes": [
+          "桂圆红枣粥",
+          "腊八粥",
+          "米粥",
+          "咖喱炒蟹",
+          "黄瓜皮蛋汤",
+          "西红柿鸡蛋挂面"
+        ],
+        "recall@3": 0.4,
+        "recall@5": 0.4,
+        "recall@10": 0.4,
+        "precision@3": 0.667,
+        "precision@5": 0.4,
+        "precision@10": 0.333,
+        "mrr": 1.0
+      },
+      {
+        "id": "r030",
+        "query": "推荐几道硬菜",
+        "query_type": "list",
+        "relevant_dishes": [
+          "梅菜扣肉",
+          "红烧肉",
+          "宫保鸡丁",
+          "水煮鱼",
+          "糖醋排骨"
+        ],
+        "retrieved_dishes": [
+          "咸肉菜饭",
+          "羊排焖面",
+          "老干妈拌面",
+          "排骨山药玉米汤",
+          "麻辣香锅",
+          "牛排",
+          "麻婆豆腐",
+          "凉皮",
+          "红烧鸡翅"
+        ],
+        "filter_accuracy@3": 0.667,
+        "category_accuracy@3": 0.333,
+        "recall@3": 0.667,
+        "precision@3": 0.667,
+        "recall@5": 0.667,
+        "precision@5": 0.667,
+        "recall@10": 0.667,
+        "precision@10": 0.667,
+        "mrr": 1.0
+      }
+    ]
+  },
+  "optimized": {
+    "overall": {
+      "recall@3": 0.796,
+      "precision@3": 0.611,
+      "recall@5": 0.807,
+      "precision@5": 0.538,
+      "recall@10": 0.807,
+      "precision@10": 0.513,
+      "mrr": 0.85
+    },
+    "by_query_type": {
+      "detail": [
+        {
+          "id": "r001",
+          "query": "宫保鸡丁怎么做？",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "宫保鸡丁"
+          ],
+          "retrieved_dishes": [
+            "宫保鸡丁",
+            "西红柿鸡蛋挂面",
+            "小炒藕丁",
+            "口水鸡",
+            "咖喱炒蟹",
+            "凉拌鸡丝"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 0.333,
+          "precision@5": 0.2,
+          "precision@10": 0.167,
+          "mrr": 1.0
+        },
+        {
+          "id": "r002",
+          "query": "水煮鱼需要哪些食材？",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "水煮鱼"
+          ],
+          "retrieved_dishes": [
+            "水煮鱼",
+            "红烧鱼",
+            "油焖大虾",
+            "糖醋鲤鱼",
+            "烤鱼",
+            "鲤鱼炖白菜",
+            "葱烧海参"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 0.333,
+          "precision@5": 0.2,
+          "precision@10": 0.143,
+          "mrr": 1.0
+        },
+        {
+          "id": "r003",
+          "query": "咖喱炒蟹的制作步骤是什么？",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "咖喱炒蟹"
+          ],
+          "retrieved_dishes": [
+            "咖喱炒蟹",
+            "油焖大虾",
+            "葱油桂鱼"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 0.333,
+          "precision@5": 0.333,
+          "precision@10": 0.333,
+          "mrr": 1.0
+        },
+        {
+          "id": "r004",
+          "query": "红烧肉的做法",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "湖南家常红烧肉",
+            "徽派红烧肉",
+            "红烧肉"
+          ],
+          "retrieved_dishes": [
+            "湖南家常红烧肉",
+            "简易红烧肉",
+            "徽派红烧肉",
+            "南派红烧肉",
+            "红烧茄子",
+            "红芸豆拌饭"
+          ],
+          "recall@3": 0.667,
+          "recall@5": 0.667,
+          "recall@10": 0.667,
+          "precision@3": 0.667,
+          "precision@5": 0.4,
+          "precision@10": 0.333,
+          "mrr": 1.0
+        },
+        {
+          "id": "r009",
+          "query": "怎么做蛋糕",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "玛格丽特饼干",
+            "烤箱版巴斯克芝士蛋糕",
+            "烤蛋挞",
+            "提拉米苏",
+            "戚风蛋糕"
+          ],
+          "retrieved_dishes": [
+            "魔芋蛋糕",
+            "戚风蛋糕",
+            "芋泥雪媚娘",
+            "红柚蛋糕"
+          ],
+          "recall@3": 0.2,
+          "recall@5": 0.2,
+          "recall@10": 0.2,
+          "precision@3": 0.333,
+          "precision@5": 0.25,
+          "precision@10": 0.25,
+          "mrr": 0.5
+        },
+        {
+          "id": "r010",
+          "query": "番茄炒蛋需要什么食材",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "西红柿炒鸡蛋"
+          ],
+          "retrieved_dishes": [
+            "西红柿炒鸡蛋",
+            "西红柿鸡蛋汤",
+            "美式炒蛋",
+            "西红柿鸡蛋挂面",
+            "蛋包饭",
+            "罗宋汤",
+            "西红柿豆腐汤羹",
+            "披萨饼皮",
+            "番茄牛肉蛋花汤"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 0.333,
+          "precision@5": 0.2,
+          "precision@10": 0.111,
+          "mrr": 1.0
+        },
+        {
+          "id": "r011",
+          "query": "鱼香肉丝怎么做",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "鱼香肉丝"
+          ],
+          "retrieved_dishes": [
+            "微波葱姜黑鳕鱼",
+            "烤鱼",
+            "咖喱炒蟹",
+            "响油鳝丝",
+            "葱油桂鱼",
+            "香煎翘嘴鱼",
+            "白灼虾",
+            "小龙虾"
+          ],
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "precision@3": 0.0,
+          "precision@5": 0.0,
+          "precision@10": 0.0,
+          "mrr": 0
+        },
+        {
+          "id": "r013",
+          "query": "可乐鸡翅的做法",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "可乐鸡翅"
+          ],
+          "retrieved_dishes": [
+            "可乐鸡翅",
+            "可乐炒饭",
+            "烤鸡翅",
+            "空气炸锅鸡翅中"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 0.333,
+          "precision@5": 0.25,
+          "precision@10": 0.25,
+          "mrr": 1.0
+        },
+        {
+          "id": "r014",
+          "query": "怎么做糖醋排骨",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "糖醋排骨"
+          ],
+          "retrieved_dishes": [
+            "糖醋排骨",
+            "咖喱炒蟹",
+            "土豆炖排骨",
+            "黄瓜皮蛋汤",
+            "醉排骨",
+            "西红柿鸡蛋挂面",
+            "酱排骨",
+            "照烧鸡腿饭"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 0.333,
+          "precision@5": 0.2,
+          "precision@10": 0.125,
+          "mrr": 1.0
+        },
+        {
+          "id": "r016",
+          "query": "麻婆豆腐怎么做",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "麻婆豆腐"
+          ],
+          "retrieved_dishes": [
+            "麻婆豆腐",
+            "家常日本豆腐",
+            "咖喱炒蟹",
+            "黄瓜皮蛋汤",
+            "葱煎豆腐",
+            "西红柿鸡蛋挂面",
+            "脆皮豆腐",
+            "照烧鸡腿饭"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 0.333,
+          "precision@5": 0.2,
+          "precision@10": 0.125,
+          "mrr": 1.0
+        },
+        {
+          "id": "r018",
+          "query": "炒饭怎么做",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "蛋炒饭",
+            "扬州炒饭",
+            "可乐炒饭"
+          ],
+          "retrieved_dishes": [
+            "蛋炒饭",
+            "可乐炒饭",
+            "扬州炒饭",
+            "蛋包饭",
+            "咖喱炒蟹",
+            "黄瓜皮蛋汤"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 1.0,
+          "precision@5": 0.6,
+          "precision@10": 0.5,
+          "mrr": 1.0
+        },
+        {
+          "id": "r020",
+          "query": "蒜蓉虾的做法",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "蒜蓉虾"
+          ],
+          "retrieved_dishes": [
+            "蒜蓉虾",
+            "芥末黄油罗氏虾",
+            "蒜香黄油虾",
+            "黄油煎虾"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 0.333,
+          "precision@5": 0.25,
+          "precision@10": 0.25,
+          "mrr": 1.0
+        },
+        {
+          "id": "r021",
+          "query": "怎么做饺子",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "手工水饺",
+            "煎饺"
+          ],
+          "retrieved_dishes": [
+            "手工水饺",
+            "速冻水饺",
+            "煎饺",
+            "咖喱炒蟹"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 0.667,
+          "precision@5": 0.5,
+          "precision@10": 0.5,
+          "mrr": 1.0
+        },
+        {
+          "id": "r023",
+          "query": "清蒸鱼怎么做",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "葱油桂鱼",
+            "清蒸鲈鱼",
+            "清蒸鳜鱼"
+          ],
+          "retrieved_dishes": [
+            "清蒸鲈鱼",
+            "白灼虾",
+            "咖喱炒蟹",
+            "葱油桂鱼",
+            "烤鱼",
+            "清蒸生蚝",
+            "微波葱姜黑鳕鱼",
+            "香煎翘嘴鱼",
+            "小龙虾"
+          ],
+          "recall@3": 0.333,
+          "recall@5": 0.667,
+          "recall@10": 0.667,
+          "precision@3": 0.333,
+          "precision@5": 0.4,
+          "precision@10": 0.222,
+          "mrr": 1.0
+        },
+        {
+          "id": "r024",
+          "query": "怎么做奶茶",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "印度奶茶",
+            "泰国手标红茶",
+            "奶茶"
+          ],
+          "retrieved_dishes": [
+            "印度奶茶",
+            "泰国手标红茶",
+            "奶茶",
+            "杨枝甘露"
+          ],
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "precision@3": 1.0,
+          "precision@5": 0.75,
+          "precision@10": 0.75,
+          "mrr": 1.0
+        },
+        {
+          "id": "r026",
+          "query": "土豆炖牛肉的做法",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "萝卜炖羊排",
+            "西红柿土豆炖牛肉",
+            "土豆炖排骨"
+          ],
+          "retrieved_dishes": [
+            "西红柿土豆炖牛肉",
+            "土豆炖排骨",
+            "拔丝土豆",
+            "蒲烧茄子",
+            "茄子炖土豆",
+            "印度土豆花菜"
+          ],
+          "recall@3": 0.667,
+          "recall@5": 0.667,
+          "recall@10": 0.667,
+          "precision@3": 0.667,
+          "precision@5": 0.4,
+          "precision@10": 0.333,
+          "mrr": 1.0
+        },
+        {
+          "id": "r029",
+          "query": "怎么做粥",
+          "query_type": "detail",
+          "relevant_dishes": [
+            "桂圆红枣粥",
+            "小米粥",
+            "银耳莲子粥",
+            "皮蛋瘦肉粥",
+            "米粥"
+          ],
+          "retrieved_dishes": [
+            "煮锅蒸米饭",
+            "西红柿鸡蛋挂面",
+            "螺蛳粉",
+            "照烧鸡腿饭",
+            "电饭煲蒸米饭",
+            "鲜肉烧卖",
+            "醪糟小汤圆",
+            "酸辣蕨根粉",
+            "鲣鱼海苔玉米饭",
+            "麻辣减脂荞麦面"
+          ],
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "precision@3": 0.0,
+          "precision@5": 0.0,
+          "precision@10": 0.0,
+          "mrr": 0
+        }
+      ],
+      "list": [
+        {
+          "id": "r005",
+          "query": "推荐几个简单的素菜",
+          "query_type": "list",
+          "relevant_dishes": [
+            "鸡蛋花",
+            "炒青菜",
+            "蚝油生菜",
+            "素炒豆角",
+            "清炒花菜"
+          ],
+          "retrieved_dishes": [
+            "清炒花菜",
+            "素炒豆角",
+            "蚝油生菜",
+            "油醋爆蛋",
+            "蒜蓉西兰花",
+            "水油焖蔬菜",
+            "西葫芦炒鸡蛋",
+            "白灼菜心",
+            "微波炉鸡蛋羹"
+          ],
+          "filter_accuracy@3": 1.0,
+          "category_accuracy@3": 1.0,
+          "recall@3": 1.0,
+          "precision@3": 1.0,
+          "recall@5": 1.0,
+          "precision@5": 1.0,
+          "recall@10": 1.0,
+          "precision@10": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "id": "r006",
+          "query": "适合健身吃的家常菜",
+          "query_type": "list",
+          "relevant_dishes": [
+            "燕麦鸡蛋饼",
+            "瘦肉土豆片",
+            "清蒸鲈鱼",
+            "白灼虾",
+            "西葫芦炒鸡蛋"
+          ],
+          "retrieved_dishes": [
+            "黔式腊肠娃娃菜",
+            "澳门湿版免治牛肉饭",
+            "玉米排骨汤",
+            "蒜苔炒肉末",
+            "麻辣香锅",
+            "简易红烧肉",
+            "瘦肉土豆片"
+          ],
+          "filter_accuracy@3": 1.0,
+          "category_accuracy@3": 0.667,
+          "recall@3": 1.0,
+          "precision@3": 1.0,
+          "recall@5": 1.0,
+          "precision@5": 1.0,
+          "recall@10": 1.0,
+          "precision@10": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "id": "r007",
+          "query": "有什么川菜推荐",
+          "query_type": "list",
+          "relevant_dishes": [
+            "麻婆豆腐",
+            "鱼香肉丝",
+            "回锅肉",
+            "宫保鸡丁",
+            "水煮鱼",
+            "水煮牛肉"
+          ],
+          "retrieved_dishes": [
+            "宫保鸡丁",
+            "凉拌豆腐",
+            "麻辣香锅",
+            "贵州辣子鸡",
+            "柱候牛腩",
+            "干煸仔鸡",
+            "牛排",
+            "糖醋里脊",
+            "广式萝卜牛腩"
+          ],
+          "filter_accuracy@3": 1.0,
+          "category_accuracy@3": 0.667,
+          "recall@3": 1.0,
+          "precision@3": 1.0,
+          "recall@5": 1.0,
+          "precision@5": 1.0,
+          "recall@10": 1.0,
+          "precision@10": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "id": "r008",
+          "query": "早餐吃什么好",
+          "query_type": "list",
+          "relevant_dishes": [
+            "燕麦鸡蛋饼",
+            "溏心蛋",
+            "牛奶燕麦",
+            "太阳蛋",
+            "手抓饼"
+          ],
+          "retrieved_dishes": [
+            "燕麦鸡蛋饼",
+            "牛奶燕麦",
+            "吐司果酱",
+            "金枪鱼酱三明治",
+            "茶叶蛋",
+            "蛋煎糍粑"
+          ],
+          "filter_accuracy@3": 1.0,
+          "category_accuracy@3": 1.0,
+          "recall@3": 1.0,
+          "precision@3": 1.0,
+          "recall@5": 1.0,
+          "precision@5": 1.0,
+          "recall@10": 1.0,
+          "precision@10": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "id": "r012",
+          "query": "推荐几道汤品",
+          "query_type": "list",
+          "relevant_dishes": [
+            "排骨山药玉米汤",
+            "紫菜蛋花汤",
+            "羊肉汤",
+            "西红柿鸡蛋汤",
+            "玉米排骨汤"
+          ],
+          "retrieved_dishes": [
+            "罗宋汤",
+            "排骨山药玉米汤",
+            "黄瓜皮蛋汤",
+            "陈皮排骨汤",
+            "朱雀汤"
+          ],
+          "filter_accuracy@3": 1.0,
+          "category_accuracy@3": 1.0,
+          "recall@3": 1.0,
+          "precision@3": 1.0,
+          "recall@5": 1.0,
+          "precision@5": 1.0,
+          "recall@10": 1.0,
+          "precision@10": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "id": "r015",
+          "query": "简单的海鲜做法",
+          "query_type": "list",
+          "relevant_dishes": [
+            "黄油煎虾",
+            "清蒸鲈鱼",
+            "清蒸生蚝",
+            "白灼虾"
+          ],
+          "retrieved_dishes": [
+            "白灼虾",
+            "蒜蓉虾",
+            "蒜香黄油虾"
+          ],
+          "filter_accuracy@3": 1.0,
+          "category_accuracy@3": 1.0,
+          "recall@3": 1.0,
+          "precision@3": 1.0,
+          "recall@5": 1.0,
+          "precision@5": 1.0,
+          "recall@10": 1.0,
+          "precision@10": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "id": "r017",
+          "query": "推荐适合新手的菜",
+          "query_type": "list",
+          "relevant_dishes": [
+            "鸡蛋花",
+            "炒青菜",
+            "凉拌黄瓜",
+            "蚝油生菜",
+            "西红柿炒鸡蛋"
+          ],
+          "retrieved_dishes": [
+            "黔式腊肠娃娃菜",
+            "猪油拌饭",
+            "凉拌油麦菜",
+            "微波炉荷包蛋",
+            "金枪鱼酱三明治",
+            "微波炉蒸蛋",
+            "朱雀汤",
+            "半成品意面",
+            "白灼菜心"
+          ],
+          "filter_accuracy@3": 1.0,
+          "category_accuracy@3": 0.667,
+          "recall@3": 1.0,
+          "precision@3": 1.0,
+          "recall@5": 1.0,
+          "precision@5": 1.0,
+          "recall@10": 1.0,
+          "precision@10": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "id": "r019",
+          "query": "有什么甜品推荐",
+          "query_type": "list",
+          "relevant_dishes": [
+            "烤蛋挞",
+            "提拉米苏",
+            "酸奶意式奶冻",
+            "戚风蛋糕",
+            "龟苓膏"
+          ],
+          "retrieved_dishes": [
+            "芋泥雪媚娘",
+            "胡萝卜甜糕",
+            "咖啡椰奶冻",
+            "反沙芋头",
+            "玛格丽特饼干",
+            "戚风蛋糕",
+            "奥利奥冰淇淋"
+          ],
+          "filter_accuracy@3": 1.0,
+          "category_accuracy@3": 1.0,
+          "recall@3": 1.0,
+          "precision@3": 1.0,
+          "recall@5": 1.0,
+          "precision@5": 1.0,
+          "recall@10": 1.0,
+          "precision@10": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "id": "r022",
+          "query": "推荐几道快手菜",
+          "query_type": "list",
+          "relevant_dishes": [
+            "炒青菜",
+            "凉拌黄瓜",
+            "蛋炒饭",
+            "西红柿炒鸡蛋",
+            "蒜蓉生菜"
+          ],
+          "retrieved_dishes": [
+            "黔式腊肠娃娃菜",
+            "凉拌油麦菜",
+            "金枪鱼酱三明治",
+            "猪油拌饭",
+            "凉拌黄瓜",
+            "半成品意面",
+            "老干妈拌面",
+            "皮蛋豆腐",
+            "蚝油生菜"
+          ],
+          "filter_accuracy@3": 1.0,
+          "category_accuracy@3": 0.333,
+          "recall@3": 1.0,
+          "precision@3": 1.0,
+          "recall@5": 1.0,
+          "precision@5": 1.0,
+          "recall@10": 1.0,
+          "precision@10": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "id": "r025",
+          "query": "推荐几道下酒菜",
+          "query_type": "list",
+          "relevant_dishes": [
+            "卤菜",
+            "拍黄瓜",
+            "口水鸡",
+            "花生米",
+            "凉拌木耳"
+          ],
+          "retrieved_dishes": [
+            "澳门湿版免治牛肉饭",
+            "红烧鸡翅",
+            "农家一碗香",
+            "豆豉鲮鱼油麦菜",
+            "土豆炖排骨",
+            "姜炒鸡"
+          ],
+          "filter_accuracy@3": 1.0,
+          "category_accuracy@3": 1.0,
+          "recall@3": 1.0,
+          "precision@3": 1.0,
+          "recall@5": 1.0,
+          "precision@5": 1.0,
+          "recall@10": 1.0,
+          "precision@10": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "id": "r027",
+          "query": "怎么做凉拌菜",
+          "query_type": "list",
+          "relevant_dishes": [
+            "皮蛋豆腐",
+            "凉拌黄瓜",
+            "凉拌鸡丝",
+            "凉拌豆腐",
+            "凉拌木耳"
+          ],
+          "retrieved_dishes": [
+            "凉拌油麦菜",
+            "葱油",
+            "凉拌黄瓜",
+            "芹菜拌茶树菇",
+            "凉拌豆腐",
+            "咖喱炒蟹",
+            "凉拌莴笋",
+            "黄瓜皮蛋汤",
+            "卤菜",
+            "西红柿鸡蛋挂面"
+          ],
+          "filter_accuracy@3": 0.0,
+          "category_accuracy@3": 0.667,
+          "recall@3": 0.0,
+          "precision@3": 0.0,
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "recall@10": 0.0,
+          "precision@10": 0.0,
+          "mrr": 0
+        },
+        {
+          "id": "r028",
+          "query": "烤箱可以做什么",
+          "query_type": "list",
+          "relevant_dishes": [
+            "玛格丽特饼干",
+            "烤蛋挞",
+            "烤箱版巴斯克芝士蛋糕",
+            "烤鸡翅",
+            "戚风蛋糕"
+          ],
+          "retrieved_dishes": [
+            "烤箱版巴斯克芝士蛋糕",
+            "魔芋蛋糕",
+            "基础牛奶面包",
+            "芋泥雪媚娘",
+            "烤蛋挞",
+            "葱油桂鱼",
+            "无厨师机蜂蜜面包",
+            "西红柿鸡蛋挂面"
+          ],
+          "filter_accuracy@3": 0.0,
+          "category_accuracy@3": 0.667,
+          "recall@3": 0.0,
+          "precision@3": 0.0,
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "recall@10": 0.0,
+          "precision@10": 0.0,
+          "mrr": 0
+        },
+        {
+          "id": "r030",
+          "query": "推荐几道硬菜",
+          "query_type": "list",
+          "relevant_dishes": [
+            "梅菜扣肉",
+            "红烧肉",
+            "宫保鸡丁",
+            "水煮鱼",
+            "糖醋排骨"
+          ],
+          "retrieved_dishes": [
+            "咸肉菜饭",
+            "羊排焖面",
+            "牛排",
+            "柱候牛腩",
+            "尖叫牛蛙",
+            "宫保鸡丁",
+            "咖啡椰奶冻",
+            "鲜肉烧卖",
+            "酒酿醪糟"
+          ],
+          "filter_accuracy@3": 1.0,
+          "category_accuracy@3": 0.667,
+          "recall@3": 1.0,
+          "precision@3": 1.0,
+          "recall@5": 1.0,
+          "precision@5": 1.0,
+          "recall@10": 1.0,
+          "precision@10": 1.0,
+          "mrr": 1.0
+        }
+      ]
+    },
+    "per_query": [
+      {
+        "id": "r001",
+        "query": "宫保鸡丁怎么做？",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "宫保鸡丁"
+        ],
+        "retrieved_dishes": [
+          "宫保鸡丁",
+          "西红柿鸡蛋挂面",
+          "小炒藕丁",
+          "口水鸡",
+          "咖喱炒蟹",
+          "凉拌鸡丝"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 0.333,
+        "precision@5": 0.2,
+        "precision@10": 0.167,
+        "mrr": 1.0
+      },
+      {
+        "id": "r002",
+        "query": "水煮鱼需要哪些食材？",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "水煮鱼"
+        ],
+        "retrieved_dishes": [
+          "水煮鱼",
+          "红烧鱼",
+          "油焖大虾",
+          "糖醋鲤鱼",
+          "烤鱼",
+          "鲤鱼炖白菜",
+          "葱烧海参"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 0.333,
+        "precision@5": 0.2,
+        "precision@10": 0.143,
+        "mrr": 1.0
+      },
+      {
+        "id": "r003",
+        "query": "咖喱炒蟹的制作步骤是什么？",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "咖喱炒蟹"
+        ],
+        "retrieved_dishes": [
+          "咖喱炒蟹",
+          "油焖大虾",
+          "葱油桂鱼"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 0.333,
+        "precision@5": 0.333,
+        "precision@10": 0.333,
+        "mrr": 1.0
+      },
+      {
+        "id": "r004",
+        "query": "红烧肉的做法",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "湖南家常红烧肉",
+          "徽派红烧肉",
+          "红烧肉"
+        ],
+        "retrieved_dishes": [
+          "湖南家常红烧肉",
+          "简易红烧肉",
+          "徽派红烧肉",
+          "南派红烧肉",
+          "红烧茄子",
+          "红芸豆拌饭"
+        ],
+        "recall@3": 0.667,
+        "recall@5": 0.667,
+        "recall@10": 0.667,
+        "precision@3": 0.667,
+        "precision@5": 0.4,
+        "precision@10": 0.333,
+        "mrr": 1.0
+      },
+      {
+        "id": "r005",
+        "query": "推荐几个简单的素菜",
+        "query_type": "list",
+        "relevant_dishes": [
+          "鸡蛋花",
+          "炒青菜",
+          "蚝油生菜",
+          "素炒豆角",
+          "清炒花菜"
+        ],
+        "retrieved_dishes": [
+          "清炒花菜",
+          "素炒豆角",
+          "蚝油生菜",
+          "油醋爆蛋",
+          "蒜蓉西兰花",
+          "水油焖蔬菜",
+          "西葫芦炒鸡蛋",
+          "白灼菜心",
+          "微波炉鸡蛋羹"
+        ],
+        "filter_accuracy@3": 1.0,
+        "category_accuracy@3": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 1.0,
+        "recall@10": 1.0,
+        "precision@10": 1.0,
+        "mrr": 1.0
+      },
+      {
+        "id": "r006",
+        "query": "适合健身吃的家常菜",
+        "query_type": "list",
+        "relevant_dishes": [
+          "燕麦鸡蛋饼",
+          "瘦肉土豆片",
+          "清蒸鲈鱼",
+          "白灼虾",
+          "西葫芦炒鸡蛋"
+        ],
+        "retrieved_dishes": [
+          "黔式腊肠娃娃菜",
+          "澳门湿版免治牛肉饭",
+          "玉米排骨汤",
+          "蒜苔炒肉末",
+          "麻辣香锅",
+          "简易红烧肉",
+          "瘦肉土豆片"
+        ],
+        "filter_accuracy@3": 1.0,
+        "category_accuracy@3": 0.667,
+        "recall@3": 1.0,
+        "precision@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 1.0,
+        "recall@10": 1.0,
+        "precision@10": 1.0,
+        "mrr": 1.0
+      },
+      {
+        "id": "r007",
+        "query": "有什么川菜推荐",
+        "query_type": "list",
+        "relevant_dishes": [
+          "麻婆豆腐",
+          "鱼香肉丝",
+          "回锅肉",
+          "宫保鸡丁",
+          "水煮鱼",
+          "水煮牛肉"
+        ],
+        "retrieved_dishes": [
+          "宫保鸡丁",
+          "凉拌豆腐",
+          "麻辣香锅",
+          "贵州辣子鸡",
+          "柱候牛腩",
+          "干煸仔鸡",
+          "牛排",
+          "糖醋里脊",
+          "广式萝卜牛腩"
+        ],
+        "filter_accuracy@3": 1.0,
+        "category_accuracy@3": 0.667,
+        "recall@3": 1.0,
+        "precision@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 1.0,
+        "recall@10": 1.0,
+        "precision@10": 1.0,
+        "mrr": 1.0
+      },
+      {
+        "id": "r008",
+        "query": "早餐吃什么好",
+        "query_type": "list",
+        "relevant_dishes": [
+          "燕麦鸡蛋饼",
+          "溏心蛋",
+          "牛奶燕麦",
+          "太阳蛋",
+          "手抓饼"
+        ],
+        "retrieved_dishes": [
+          "燕麦鸡蛋饼",
+          "牛奶燕麦",
+          "吐司果酱",
+          "金枪鱼酱三明治",
+          "茶叶蛋",
+          "蛋煎糍粑"
+        ],
+        "filter_accuracy@3": 1.0,
+        "category_accuracy@3": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 1.0,
+        "recall@10": 1.0,
+        "precision@10": 1.0,
+        "mrr": 1.0
+      },
+      {
+        "id": "r009",
+        "query": "怎么做蛋糕",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "玛格丽特饼干",
+          "烤箱版巴斯克芝士蛋糕",
+          "烤蛋挞",
+          "提拉米苏",
+          "戚风蛋糕"
+        ],
+        "retrieved_dishes": [
+          "魔芋蛋糕",
+          "戚风蛋糕",
+          "芋泥雪媚娘",
+          "红柚蛋糕"
+        ],
+        "recall@3": 0.2,
+        "recall@5": 0.2,
+        "recall@10": 0.2,
+        "precision@3": 0.333,
+        "precision@5": 0.25,
+        "precision@10": 0.25,
+        "mrr": 0.5
+      },
+      {
+        "id": "r010",
+        "query": "番茄炒蛋需要什么食材",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "西红柿炒鸡蛋"
+        ],
+        "retrieved_dishes": [
+          "西红柿炒鸡蛋",
+          "西红柿鸡蛋汤",
+          "美式炒蛋",
+          "西红柿鸡蛋挂面",
+          "蛋包饭",
+          "罗宋汤",
+          "西红柿豆腐汤羹",
+          "披萨饼皮",
+          "番茄牛肉蛋花汤"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 0.333,
+        "precision@5": 0.2,
+        "precision@10": 0.111,
+        "mrr": 1.0
+      },
+      {
+        "id": "r011",
+        "query": "鱼香肉丝怎么做",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "鱼香肉丝"
+        ],
+        "retrieved_dishes": [
+          "微波葱姜黑鳕鱼",
+          "烤鱼",
+          "咖喱炒蟹",
+          "响油鳝丝",
+          "葱油桂鱼",
+          "香煎翘嘴鱼",
+          "白灼虾",
+          "小龙虾"
+        ],
+        "recall@3": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "mrr": 0
+      },
+      {
+        "id": "r012",
+        "query": "推荐几道汤品",
+        "query_type": "list",
+        "relevant_dishes": [
+          "排骨山药玉米汤",
+          "紫菜蛋花汤",
+          "羊肉汤",
+          "西红柿鸡蛋汤",
+          "玉米排骨汤"
+        ],
+        "retrieved_dishes": [
+          "罗宋汤",
+          "排骨山药玉米汤",
+          "黄瓜皮蛋汤",
+          "陈皮排骨汤",
+          "朱雀汤"
+        ],
+        "filter_accuracy@3": 1.0,
+        "category_accuracy@3": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 1.0,
+        "recall@10": 1.0,
+        "precision@10": 1.0,
+        "mrr": 1.0
+      },
+      {
+        "id": "r013",
+        "query": "可乐鸡翅的做法",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "可乐鸡翅"
+        ],
+        "retrieved_dishes": [
+          "可乐鸡翅",
+          "可乐炒饭",
+          "烤鸡翅",
+          "空气炸锅鸡翅中"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 0.333,
+        "precision@5": 0.25,
+        "precision@10": 0.25,
+        "mrr": 1.0
+      },
+      {
+        "id": "r014",
+        "query": "怎么做糖醋排骨",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "糖醋排骨"
+        ],
+        "retrieved_dishes": [
+          "糖醋排骨",
+          "咖喱炒蟹",
+          "土豆炖排骨",
+          "黄瓜皮蛋汤",
+          "醉排骨",
+          "西红柿鸡蛋挂面",
+          "酱排骨",
+          "照烧鸡腿饭"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 0.333,
+        "precision@5": 0.2,
+        "precision@10": 0.125,
+        "mrr": 1.0
+      },
+      {
+        "id": "r015",
+        "query": "简单的海鲜做法",
+        "query_type": "list",
+        "relevant_dishes": [
+          "黄油煎虾",
+          "清蒸鲈鱼",
+          "清蒸生蚝",
+          "白灼虾"
+        ],
+        "retrieved_dishes": [
+          "白灼虾",
+          "蒜蓉虾",
+          "蒜香黄油虾"
+        ],
+        "filter_accuracy@3": 1.0,
+        "category_accuracy@3": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 1.0,
+        "recall@10": 1.0,
+        "precision@10": 1.0,
+        "mrr": 1.0
+      },
+      {
+        "id": "r016",
+        "query": "麻婆豆腐怎么做",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "麻婆豆腐"
+        ],
+        "retrieved_dishes": [
+          "麻婆豆腐",
+          "家常日本豆腐",
+          "咖喱炒蟹",
+          "黄瓜皮蛋汤",
+          "葱煎豆腐",
+          "西红柿鸡蛋挂面",
+          "脆皮豆腐",
+          "照烧鸡腿饭"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 0.333,
+        "precision@5": 0.2,
+        "precision@10": 0.125,
+        "mrr": 1.0
+      },
+      {
+        "id": "r017",
+        "query": "推荐适合新手的菜",
+        "query_type": "list",
+        "relevant_dishes": [
+          "鸡蛋花",
+          "炒青菜",
+          "凉拌黄瓜",
+          "蚝油生菜",
+          "西红柿炒鸡蛋"
+        ],
+        "retrieved_dishes": [
+          "黔式腊肠娃娃菜",
+          "猪油拌饭",
+          "凉拌油麦菜",
+          "微波炉荷包蛋",
+          "金枪鱼酱三明治",
+          "微波炉蒸蛋",
+          "朱雀汤",
+          "半成品意面",
+          "白灼菜心"
+        ],
+        "filter_accuracy@3": 1.0,
+        "category_accuracy@3": 0.667,
+        "recall@3": 1.0,
+        "precision@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 1.0,
+        "recall@10": 1.0,
+        "precision@10": 1.0,
+        "mrr": 1.0
+      },
+      {
+        "id": "r018",
+        "query": "炒饭怎么做",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "蛋炒饭",
+          "扬州炒饭",
+          "可乐炒饭"
+        ],
+        "retrieved_dishes": [
+          "蛋炒饭",
+          "可乐炒饭",
+          "扬州炒饭",
+          "蛋包饭",
+          "咖喱炒蟹",
+          "黄瓜皮蛋汤"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 1.0,
+        "precision@5": 0.6,
+        "precision@10": 0.5,
+        "mrr": 1.0
+      },
+      {
+        "id": "r019",
+        "query": "有什么甜品推荐",
+        "query_type": "list",
+        "relevant_dishes": [
+          "烤蛋挞",
+          "提拉米苏",
+          "酸奶意式奶冻",
+          "戚风蛋糕",
+          "龟苓膏"
+        ],
+        "retrieved_dishes": [
+          "芋泥雪媚娘",
+          "胡萝卜甜糕",
+          "咖啡椰奶冻",
+          "反沙芋头",
+          "玛格丽特饼干",
+          "戚风蛋糕",
+          "奥利奥冰淇淋"
+        ],
+        "filter_accuracy@3": 1.0,
+        "category_accuracy@3": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 1.0,
+        "recall@10": 1.0,
+        "precision@10": 1.0,
+        "mrr": 1.0
+      },
+      {
+        "id": "r020",
+        "query": "蒜蓉虾的做法",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "蒜蓉虾"
+        ],
+        "retrieved_dishes": [
+          "蒜蓉虾",
+          "芥末黄油罗氏虾",
+          "蒜香黄油虾",
+          "黄油煎虾"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 0.333,
+        "precision@5": 0.25,
+        "precision@10": 0.25,
+        "mrr": 1.0
+      },
+      {
+        "id": "r021",
+        "query": "怎么做饺子",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "手工水饺",
+          "煎饺"
+        ],
+        "retrieved_dishes": [
+          "手工水饺",
+          "速冻水饺",
+          "煎饺",
+          "咖喱炒蟹"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 0.667,
+        "precision@5": 0.5,
+        "precision@10": 0.5,
+        "mrr": 1.0
+      },
+      {
+        "id": "r022",
+        "query": "推荐几道快手菜",
+        "query_type": "list",
+        "relevant_dishes": [
+          "炒青菜",
+          "凉拌黄瓜",
+          "蛋炒饭",
+          "西红柿炒鸡蛋",
+          "蒜蓉生菜"
+        ],
+        "retrieved_dishes": [
+          "黔式腊肠娃娃菜",
+          "凉拌油麦菜",
+          "金枪鱼酱三明治",
+          "猪油拌饭",
+          "凉拌黄瓜",
+          "半成品意面",
+          "老干妈拌面",
+          "皮蛋豆腐",
+          "蚝油生菜"
+        ],
+        "filter_accuracy@3": 1.0,
+        "category_accuracy@3": 0.333,
+        "recall@3": 1.0,
+        "precision@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 1.0,
+        "recall@10": 1.0,
+        "precision@10": 1.0,
+        "mrr": 1.0
+      },
+      {
+        "id": "r023",
+        "query": "清蒸鱼怎么做",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "葱油桂鱼",
+          "清蒸鲈鱼",
+          "清蒸鳜鱼"
+        ],
+        "retrieved_dishes": [
+          "清蒸鲈鱼",
+          "白灼虾",
+          "咖喱炒蟹",
+          "葱油桂鱼",
+          "烤鱼",
+          "清蒸生蚝",
+          "微波葱姜黑鳕鱼",
+          "香煎翘嘴鱼",
+          "小龙虾"
+        ],
+        "recall@3": 0.333,
+        "recall@5": 0.667,
+        "recall@10": 0.667,
+        "precision@3": 0.333,
+        "precision@5": 0.4,
+        "precision@10": 0.222,
+        "mrr": 1.0
+      },
+      {
+        "id": "r024",
+        "query": "怎么做奶茶",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "印度奶茶",
+          "泰国手标红茶",
+          "奶茶"
+        ],
+        "retrieved_dishes": [
+          "印度奶茶",
+          "泰国手标红茶",
+          "奶茶",
+          "杨枝甘露"
+        ],
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "precision@3": 1.0,
+        "precision@5": 0.75,
+        "precision@10": 0.75,
+        "mrr": 1.0
+      },
+      {
+        "id": "r025",
+        "query": "推荐几道下酒菜",
+        "query_type": "list",
+        "relevant_dishes": [
+          "卤菜",
+          "拍黄瓜",
+          "口水鸡",
+          "花生米",
+          "凉拌木耳"
+        ],
+        "retrieved_dishes": [
+          "澳门湿版免治牛肉饭",
+          "红烧鸡翅",
+          "农家一碗香",
+          "豆豉鲮鱼油麦菜",
+          "土豆炖排骨",
+          "姜炒鸡"
+        ],
+        "filter_accuracy@3": 1.0,
+        "category_accuracy@3": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 1.0,
+        "recall@10": 1.0,
+        "precision@10": 1.0,
+        "mrr": 1.0
+      },
+      {
+        "id": "r026",
+        "query": "土豆炖牛肉的做法",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "萝卜炖羊排",
+          "西红柿土豆炖牛肉",
+          "土豆炖排骨"
+        ],
+        "retrieved_dishes": [
+          "西红柿土豆炖牛肉",
+          "土豆炖排骨",
+          "拔丝土豆",
+          "蒲烧茄子",
+          "茄子炖土豆",
+          "印度土豆花菜"
+        ],
+        "recall@3": 0.667,
+        "recall@5": 0.667,
+        "recall@10": 0.667,
+        "precision@3": 0.667,
+        "precision@5": 0.4,
+        "precision@10": 0.333,
+        "mrr": 1.0
+      },
+      {
+        "id": "r027",
+        "query": "怎么做凉拌菜",
+        "query_type": "list",
+        "relevant_dishes": [
+          "皮蛋豆腐",
+          "凉拌黄瓜",
+          "凉拌鸡丝",
+          "凉拌豆腐",
+          "凉拌木耳"
+        ],
+        "retrieved_dishes": [
+          "凉拌油麦菜",
+          "葱油",
+          "凉拌黄瓜",
+          "芹菜拌茶树菇",
+          "凉拌豆腐",
+          "咖喱炒蟹",
+          "凉拌莴笋",
+          "黄瓜皮蛋汤",
+          "卤菜",
+          "西红柿鸡蛋挂面"
+        ],
+        "filter_accuracy@3": 0.0,
+        "category_accuracy@3": 0.667,
+        "recall@3": 0.0,
+        "precision@3": 0.0,
+        "recall@5": 0.0,
+        "precision@5": 0.0,
+        "recall@10": 0.0,
+        "precision@10": 0.0,
+        "mrr": 0
+      },
+      {
+        "id": "r028",
+        "query": "烤箱可以做什么",
+        "query_type": "list",
+        "relevant_dishes": [
+          "玛格丽特饼干",
+          "烤蛋挞",
+          "烤箱版巴斯克芝士蛋糕",
+          "烤鸡翅",
+          "戚风蛋糕"
+        ],
+        "retrieved_dishes": [
+          "烤箱版巴斯克芝士蛋糕",
+          "魔芋蛋糕",
+          "基础牛奶面包",
+          "芋泥雪媚娘",
+          "烤蛋挞",
+          "葱油桂鱼",
+          "无厨师机蜂蜜面包",
+          "西红柿鸡蛋挂面"
+        ],
+        "filter_accuracy@3": 0.0,
+        "category_accuracy@3": 0.667,
+        "recall@3": 0.0,
+        "precision@3": 0.0,
+        "recall@5": 0.0,
+        "precision@5": 0.0,
+        "recall@10": 0.0,
+        "precision@10": 0.0,
+        "mrr": 0
+      },
+      {
+        "id": "r029",
+        "query": "怎么做粥",
+        "query_type": "detail",
+        "relevant_dishes": [
+          "桂圆红枣粥",
+          "小米粥",
+          "银耳莲子粥",
+          "皮蛋瘦肉粥",
+          "米粥"
+        ],
+        "retrieved_dishes": [
+          "煮锅蒸米饭",
+          "西红柿鸡蛋挂面",
+          "螺蛳粉",
+          "照烧鸡腿饭",
+          "电饭煲蒸米饭",
+          "鲜肉烧卖",
+          "醪糟小汤圆",
+          "酸辣蕨根粉",
+          "鲣鱼海苔玉米饭",
+          "麻辣减脂荞麦面"
+        ],
+        "recall@3": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "mrr": 0
+      },
+      {
+        "id": "r030",
+        "query": "推荐几道硬菜",
+        "query_type": "list",
+        "relevant_dishes": [
+          "梅菜扣肉",
+          "红烧肉",
+          "宫保鸡丁",
+          "水煮鱼",
+          "糖醋排骨"
+        ],
+        "retrieved_dishes": [
+          "咸肉菜饭",
+          "羊排焖面",
+          "牛排",
+          "柱候牛腩",
+          "尖叫牛蛙",
+          "宫保鸡丁",
+          "咖啡椰奶冻",
+          "鲜肉烧卖",
+          "酒酿醪糟"
+        ],
+        "filter_accuracy@3": 1.0,
+        "category_accuracy@3": 0.667,
+        "recall@3": 1.0,
+        "precision@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 1.0,
+        "recall@10": 1.0,
+        "precision@10": 1.0,
+        "mrr": 1.0
+      }
+    ]
+  },
+  "improvement": {
+    "recall@3": {
+      "baseline": 0.631,
+      "optimized": 0.796,
+      "absolute_delta": 0.165,
+      "relative_delta_pct": 26.1
+    },
+    "recall@5": {
+      "baseline": 0.642,
+      "optimized": 0.807,
+      "absolute_delta": 0.165,
+      "relative_delta_pct": 25.7
+    },
+    "recall@10": {
+      "baseline": 0.653,
+      "optimized": 0.807,
+      "absolute_delta": 0.154,
+      "relative_delta_pct": 23.6
+    },
+    "precision@3": {
+      "baseline": 0.433,
+      "optimized": 0.611,
+      "absolute_delta": 0.178,
+      "relative_delta_pct": 41.1
+    },
+    "mrr": {
+      "baseline": 0.8,
+      "optimized": 0.85,
+      "absolute_delta": 0.05,
+      "relative_delta_pct": 6.2
+    }
+  }
+}

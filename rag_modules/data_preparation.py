@@ -31,6 +31,67 @@ class DataPreparationModule:
     CATEGORY_LABELS = list(set(CATEGORY_MAPPING.values()))
     DIFFICULTY_LABELS = ['非常简单', '简单', '中等', '困难', '非常困难']
     
+    # [2026-04-27 17:50] 新增：分类同义词表，用于语义过滤匹配
+    # 解决用户查询中的同义词/变体词无法匹配到标准分类的问题
+    # 例如：用户说"素食"→匹配"素菜"，"海鲜"→匹配"水产"
+    CATEGORY_SYNONYMS = {
+        '素菜': ['素菜', '素食', '青菜', '蔬菜', '清淡', '斋菜', '素'],
+        '荤菜': ['荤菜', '肉菜', '炒菜', '大肉', '主菜', '荤'],
+        '汤品': ['汤品', '汤', '羹', '炖品', '煲汤', '炖汤'],
+        '甜品': ['甜品', '甜点', '蛋糕', '布丁', '糖水', '烘焙', '糕点'],
+        '饮品': ['饮品', '饮料', '奶茶', '果汁', '酒水', '茶', '喝的'],
+        '水产': ['水产', '海鲜', '鱼', '虾', '蟹', '贝类', '海味'],
+        '早餐': ['早餐', '早点', '早饭', '早茶', '早点'],
+        '主食': ['主食', '米饭', '面食', '粉', '面条', '粥', '主食类'],
+        '调料': ['调料', '酱料', '蘸料', '调味', '调味品'],
+    }
+    
+    # [2026-04-27 17:50] 新增：场景词到过滤条件的映射
+    # 解决"新手""快手""健身"等场景词无法映射到具体过滤条件的问题
+    # 注意：difficulty用列表表示OR逻辑（满足任一即可）
+    SCENE_TO_FILTER = {
+        # --- 难度映射 ---
+        '新手': {'difficulty': ['非常简单', '简单']},
+        '快手': {'difficulty': ['非常简单', '简单']},
+        '简单': {'difficulty': ['非常简单', '简单']},
+        '容易': {'difficulty': ['非常简单', '简单']},
+        '入门': {'difficulty': ['非常简单', '简单']},
+        '零基础': {'difficulty': ['非常简单', '简单']},
+        '复杂': {'difficulty': ['困难', '非常困难']},
+        '硬菜': {'difficulty': ['困难', '非常困难']},
+        '挑战': {'difficulty': ['困难', '非常困难']},
+        '大菜': {'difficulty': ['困难', '非常困难']},
+        '困难': {'difficulty': ['困难', '非常困难']},
+        
+        # --- 场景映射（分类+难度组合） ---
+        '健身': {'category': ['素菜', '水产'], 'difficulty': ['非常简单', '简单', '中等']},
+        '减肥': {'category': ['素菜', '汤品'], 'difficulty': ['非常简单', '简单']},
+        '减脂': {'category': ['素菜', '水产'], 'difficulty': ['非常简单', '简单']},
+        '低脂': {'category': ['素菜', '水产', '汤品'], 'difficulty': ['非常简单', '简单', '中等']},
+        '下酒': {'category': ['荤菜', '素菜'], 'difficulty': ['简单', '中等']},
+        '宴客': {'difficulty': ['中等', '困难']},
+        '待客': {'difficulty': ['中等', '困难']},
+        '聚餐': {'difficulty': ['中等', '困难']},
+        '请客': {'difficulty': ['中等', '困难']},
+        '便当': {'category': ['荤菜', '素菜'], 'difficulty': ['简单']},
+        '带饭': {'category': ['荤菜', '素菜'], 'difficulty': ['简单']},
+        '工作日': {'difficulty': ['非常简单', '简单']},
+        '懒人': {'difficulty': ['非常简单', '简单']},
+    }
+    
+    # [2026-04-27 17:50] 新增：菜系到分类的映射（特殊处理）
+    # 菜系不直接等于分类，而是跨多个分类，需要OR检索
+    # 例如：川菜包含荤菜、素菜、汤品等多个分类
+    CUISINE_TO_CATEGORY = {
+        '川菜': ['荤菜', '素菜', '汤品'],
+        '湘菜': ['荤菜', '素菜', '汤品'],
+        '粤菜': ['荤菜', '素菜', '汤品', '水产'],
+        '鲁菜': ['荤菜', '素菜', '汤品'],
+        '江浙菜': ['荤菜', '素菜', '水产', '汤品'],
+        '东北菜': ['荤菜', '素菜', '汤品'],
+        '家常菜': ['荤菜', '素菜', '汤品'],
+    }
+    
     def __init__(self, data_path: str):
         """
         初始化数据准备模块
@@ -136,6 +197,24 @@ class DataPreparationModule:
     def get_supported_difficulties(cls) -> List[str]:
         """对外提供支持的难度标签列表"""
         return cls.DIFFICULTY_LABELS
+    
+    # [2026-04-27 17:50] 新增：对外提供同义词表，供main.py使用
+    @classmethod
+    def get_category_synonyms(cls) -> Dict[str, List[str]]:
+        """对外提供分类同义词表"""
+        return cls.CATEGORY_SYNONYMS
+    
+    # [2026-04-27 17:50] 新增：对外提供场景映射表，供main.py使用
+    @classmethod
+    def get_scene_to_filter(cls) -> Dict[str, Dict[str, Any]]:
+        """对外提供场景词到过滤条件的映射表"""
+        return cls.SCENE_TO_FILTER
+    
+    # [2026-04-27 17:50] 新增：对外提供菜系映射表，供main.py使用
+    @classmethod
+    def get_cuisine_to_category(cls) -> Dict[str, List[str]]:
+        """对外提供菜系到分类的映射表"""
+        return cls.CUISINE_TO_CATEGORY
     
     def chunk_documents(self) -> List[Document]:
         """

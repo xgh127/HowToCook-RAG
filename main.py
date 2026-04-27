@@ -174,11 +174,22 @@ class RecipeRAGSystem:
             print("🤖 智能分析查询...")
             rewritten_query = self.generation_module.query_rewrite(question)
         
-        # 3. 检索相关子块（自动应用元数据过滤）
+        # [2026-04-27 18:05] 修改：在查询重写之前先提取过滤条件
+        # 原因：查询重写可能改变关键词（如"新手"→"初学者"），导致过滤条件丢失
+        # 解决方案：从原始查询提取过滤条件，用重写后的查询做检索
         print("🔍 检索相关文档...")
+        
+        # 步骤1：从原始查询提取过滤条件（保留原始语义）
         filters = self._extract_filters_from_query(question)
-        if filters:
-            print(f"应用过滤条件: {filters}")
+        
+        # [2026-04-28 00:57] 修复：Detail查询不应用metadata过滤
+        # 原因：用户已明确指定菜名，过滤条件会干扰检索结果
+        # List查询才需要过滤条件来缩小候选范围
+        if route_type == 'detail':
+            print(f"[2026-04-28 00:57] Detail查询跳过过滤条件")
+            relevant_chunks = self.retrieval_module.hybrid_search(rewritten_query, top_k=self.config.top_k)
+        elif filters:
+            print(f"[2026-04-27 18:05] 应用过滤条件: {filters}")
             relevant_chunks = self.retrieval_module.metadata_filtered_search(rewritten_query, filters, top_k=self.config.top_k)
         else:
             relevant_chunks = self.retrieval_module.hybrid_search(rewritten_query, top_k=self.config.top_k)
@@ -254,25 +265,119 @@ class RecipeRAGSystem:
                 else:
                     return self.generation_module.generate_basic_answer(question, relevant_docs)
     
+    # [2026-04-27 17:55] 重构：从简单字符串匹配升级为三层语义过滤提取
+    # 原逻辑：只支持精确匹配（如"素菜"），不支持同义词（如"素食""青菜"）
+    # 新逻辑：Layer1规则匹配 → Layer2同义词扩展 → Layer3场景词映射
     def _extract_filters_from_query(self, query: str) -> dict:
         """
-        从用户问题中提取元数据过滤条件
+        【2026-04-27 17:55】智能提取元数据过滤条件
+        
+        三层架构：
+        - Layer 1: 精确匹配（标准分类名/难度名）
+        - Layer 2: 同义词扩展（素食→素菜，海鲜→水产）
+        - Layer 3: 场景词映射（新手→简单难度，健身→素菜/水产）
+        
+        Args:
+            query: 用户原始查询
+            
+        Returns:
+            filters: 过滤条件字典，可能包含:
+                - category: str 单分类（常规检索）
+                - category_list: List[str] 多分类（菜系检索，需OR逻辑）
+                - difficulty: str 单难度
+                - difficulty_list: List[str] 多难度（场景词映射，需OR逻辑）
         """
         filters = {}
-        # 分类关键词
+        query_lower = query.lower()
+        
+        # ========== Layer 1: 精确匹配（原有逻辑保留）==========
+        # 先尝试直接匹配标准分类名（最快路径）
         category_keywords = DataPreparationModule.get_supported_categories()
         for cat in category_keywords:
             if cat in query:
                 filters['category'] = cat
                 break
-
-        # 难度关键词
-        difficulty_keywords = DataPreparationModule.get_supported_difficulties()
-        for diff in sorted(difficulty_keywords, key=len, reverse=True):
-            if diff in query:# 就是检查query里面有没有关键词
-                filters['difficulty'] = diff
+        
+        # 直接匹配标准难度名
+        if 'difficulty' not in filters:
+            difficulty_keywords = DataPreparationModule.get_supported_difficulties()
+            for diff in sorted(difficulty_keywords, key=len, reverse=True):
+                if diff in query:
+                    filters['difficulty'] = diff
+                    break
+        
+        # ========== Layer 2: 同义词扩展（新增）==========
+        # 如果Layer 1未匹配到分类，尝试同义词表
+        # 例如：用户说"素食"→匹配"素菜"，"海鲜"→匹配"水产"
+        if 'category' not in filters:
+            synonyms = DataPreparationModule.get_category_synonyms()
+            for standard_cat, synonym_list in synonyms.items():
+                for syn in synonym_list:
+                    if syn in query:
+                        filters['category'] = standard_cat
+                        break
+                if 'category' in filters:
+                    break
+        
+        # ========== Layer 3: 场景词映射（新增）==========
+        # 处理"新手""快手""健身""宴客"等场景词
+        # 这些词不直接等于分类/难度，需要映射到组合条件
+        scene_filters = DataPreparationModule.get_scene_to_filter()
+        matched_scenes = []
+        
+        for scene_word, scene_filter in scene_filters.items():
+            if scene_word in query:
+                matched_scenes.append((scene_word, scene_filter))
+        
+        # 如果匹配到场景词，应用对应的过滤条件
+        # 注意：多个场景词可能冲突，这里取第一个匹配的
+        if matched_scenes:
+            scene_word, scene_filter = matched_scenes[0]
+            
+            # 场景映射的分类（如果有）
+            if 'category' in scene_filter and 'category' not in filters:
+                cat_list = scene_filter['category']
+                if len(cat_list) == 1:
+                    filters['category'] = cat_list[0]
+                else:
+                    # 多个分类用category_list标记，检索模块需特殊处理OR逻辑
+                    filters['category_list'] = cat_list
+            
+            # 场景映射的难度（如果有）
+            if 'difficulty' in scene_filter and 'difficulty' not in filters:
+                diff_list = scene_filter['difficulty']
+                if len(diff_list) == 1:
+                    filters['difficulty'] = diff_list[0]
+                else:
+                    # 多个难度用difficulty_list标记，检索模块需特殊处理OR逻辑
+                    filters['difficulty_list'] = diff_list
+        
+        # ========== 特殊处理：菜系查询（新增）==========
+        # "川菜""粤菜"等菜系词不是具体分类，需要映射到多个分类的OR检索
+        cuisine_mapping = DataPreparationModule.get_cuisine_to_category()
+        for cuisine, categories in cuisine_mapping.items():
+            if cuisine in query:
+                # 菜系查询返回多个候选分类，用category_list标记
+                filters['category_list'] = categories
+                # 记录原始菜系词，供后续使用
+                filters['cuisine'] = cuisine
                 break
-
+        
+        # [2026-04-27 17:55] 调试日志：记录过滤条件提取过程
+        if filters:
+            filter_info = []
+            if 'category' in filters:
+                filter_info.append(f"分类={filters['category']}")
+            if 'category_list' in filters:
+                filter_info.append(f"多分类={filters['category_list']}")
+            if 'difficulty' in filters:
+                filter_info.append(f"难度={filters['difficulty']}")
+            if 'difficulty_list' in filters:
+                filter_info.append(f"多难度={filters['difficulty_list']}")
+            if 'cuisine' in filters:
+                filter_info.append(f"菜系={filters['cuisine']}")
+            print(f"[Filter提取] 查询'{query}' → {', '.join(filter_info)}")
+        
         return filters
     def test_retrieval(self):
         """

@@ -1,0 +1,242 @@
+[
+  {
+    "id": "r001",
+    "query": "宫保鸡丁怎么做？",
+    "relevant_dishes": ["宫保鸡丁"],
+    "relevant_categories": ["荤菜"],
+    "query_type": "detail",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r002",
+    "query": "水煮鱼需要哪些食材？",
+    "relevant_dishes": ["水煮鱼"],
+    "relevant_categories": ["水产"],
+    "query_type": "detail",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r003",
+    "query": "咖喱炒蟹的制作步骤是什么？",
+    "relevant_dishes": ["咖喱炒蟹"],
+    "relevant_categories": ["水产"],
+    "query_type": "detail",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r004",
+    "query": "红烧肉的做法",
+    "relevant_dishes": ["红烧肉", "湖南家常红烧肉", "徽派红烧肉"],
+    "relevant_categories": ["荤菜"],
+    "query_type": "detail",
+    "difficulty": "medium"
+  },
+  {
+    "id": "r005",
+    "query": "推荐几个简单的素菜",
+    "relevant_dishes": ["素炒豆角", "清炒花菜", "鸡蛋花", "蚝油生菜", "炒青菜"],
+    "relevant_categories": ["素菜"],
+    "query_type": "list",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r006",
+    "query": "适合健身吃的家常菜",
+    "relevant_dishes": ["燕麦鸡蛋饼", "清蒸鲈鱼", "白灼虾", "瘦肉土豆片", "西葫芦炒鸡蛋"],
+    "relevant_categories": ["早餐", "水产", "荤菜", "素菜"],
+    "query_type": "list",
+    "difficulty": "medium"
+  },
+  {
+    "id": "r007",
+    "query": "有什么川菜推荐",
+    "relevant_dishes": ["宫保鸡丁", "水煮鱼", "回锅肉", "麻婆豆腐", "水煮牛肉", "鱼香肉丝"],
+    "relevant_categories": ["荤菜", "水产"],
+    "query_type": "list",
+    "difficulty": "medium"
+  },
+  {
+    "id": "r008",
+    "query": "早餐吃什么好",
+    "relevant_dishes": ["燕麦鸡蛋饼", "太阳蛋", "溏心蛋", "牛奶燕麦", "手抓饼"],
+    "relevant_categories": ["早餐"],
+    "query_type": "list",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r009",
+    "query": "怎么做蛋糕",
+    "relevant_dishes": ["戚风蛋糕", "烤蛋挞", "提拉米苏", "玛格丽特饼干", "烤箱版巴斯克芝士蛋糕"],
+    "relevant_categories": ["甜品"],
+    "query_type": "detail",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r010",
+    "query": "番茄炒蛋需要什么食材",
+    "relevant_dishes": ["西红柿炒鸡蛋"],
+    "relevant_categories": ["素菜"],
+    "query_type": "detail",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r011",
+    "query": "鱼香肉丝怎么做",
+    "relevant_dishes": ["鱼香肉丝"],
+    "relevant_categories": ["荤菜"],
+    "query_type": "detail",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r012",
+    "query": "推荐几道汤品",
+    "relevant_dishes": ["西红柿鸡蛋汤", "紫菜蛋花汤", "玉米排骨汤", "排骨山药玉米汤", "羊肉汤"],
+    "relevant_categories": ["汤品"],
+    "query_type": "list",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r013",
+    "query": "可乐鸡翅的做法",
+    "relevant_dishes": ["可乐鸡翅"],
+    "relevant_categories": ["荤菜"],
+    "query_type": "detail",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r014",
+    "query": "怎么做糖醋排骨",
+    "relevant_dishes": ["糖醋排骨"],
+    "relevant_categories": ["荤菜"],
+    "query_type": "detail",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r015",
+    "query": "简单的海鲜做法",
+    "relevant_dishes": ["白灼虾", "清蒸鲈鱼", "清蒸生蚝", "黄油煎虾"],
+    "relevant_categories": ["水产"],
+    "query_type": "list",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r016",
+    "query": "麻婆豆腐怎么做",
+    "relevant_dishes": ["麻婆豆腐"],
+    "relevant_categories": ["荤菜"],
+    "query_type": "detail",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r017",
+    "query": "推荐适合新手的菜",
+    "relevant_dishes": ["西红柿炒鸡蛋", "炒青菜", "鸡蛋花", "蚝油生菜", "凉拌黄瓜"],
+    "relevant_categories": ["素菜", "荤菜"],
+    "query_type": "list",
+    "difficulty": "medium"
+  },
+  {
+    "id": "r018",
+    "query": "炒饭怎么做",
+    "relevant_dishes": ["蛋炒饭", "扬州炒饭", "可乐炒饭"],
+    "relevant_categories": ["主食"],
+    "query_type": "detail",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r019",
+    "query": "有什么甜品推荐",
+    "relevant_dishes": ["提拉米苏", "戚风蛋糕", "烤蛋挞", "龟苓膏", "酸奶意式奶冻"],
+    "relevant_categories": ["甜品"],
+    "query_type": "list",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r020",
+    "query": "蒜蓉虾的做法",
+    "relevant_dishes": ["蒜蓉虾"],
+    "relevant_categories": ["水产"],
+    "query_type": "detail",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r021",
+    "query": "怎么做饺子",
+    "relevant_dishes": ["手工水饺", "煎饺"],
+    "relevant_categories": ["主食"],
+    "query_type": "detail",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r022",
+    "query": "推荐几道快手菜",
+    "relevant_dishes": ["西红柿炒鸡蛋", "炒青菜", "凉拌黄瓜", "蒜蓉生菜", "蛋炒饭"],
+    "relevant_categories": ["素菜", "主食"],
+    "query_type": "list",
+    "difficulty": "medium"
+  },
+  {
+    "id": "r023",
+    "query": "清蒸鱼怎么做",
+    "relevant_dishes": ["清蒸鲈鱼", "清蒸鳜鱼", "葱油桂鱼"],
+    "relevant_categories": ["水产"],
+    "query_type": "detail",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r024",
+    "query": "怎么做奶茶",
+    "relevant_dishes": ["奶茶", "印度奶茶", "泰国手标红茶"],
+    "relevant_categories": ["饮品"],
+    "query_type": "detail",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r025",
+    "query": "推荐几道下酒菜",
+    "relevant_dishes": ["凉拌木耳", "卤菜", "花生米", "拍黄瓜", "口水鸡"],
+    "relevant_categories": ["素菜", "荤菜", "凉菜"],
+    "query_type": "list",
+    "difficulty": "hard"
+  },
+  {
+    "id": "r026",
+    "query": "土豆炖牛肉的做法",
+    "relevant_dishes": ["土豆炖排骨", "西红柿土豆炖牛肉", "萝卜炖羊排"],
+    "relevant_categories": ["荤菜"],
+    "query_type": "detail",
+    "difficulty": "medium"
+  },
+  {
+    "id": "r027",
+    "query": "怎么做凉拌菜",
+    "relevant_dishes": ["凉拌黄瓜", "凉拌木耳", "凉拌豆腐", "皮蛋豆腐", "凉拌鸡丝"],
+    "relevant_categories": ["素菜", "荤菜"],
+    "query_type": "list",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r028",
+    "query": "烤箱可以做什么",
+    "relevant_dishes": ["烤蛋挞", "戚风蛋糕", "烤鸡翅", "烤箱版巴斯克芝士蛋糕", "玛格丽特饼干"],
+    "relevant_categories": ["甜品", "荤菜"],
+    "query_type": "list",
+    "difficulty": "medium"
+  },
+  {
+    "id": "r029",
+    "query": "怎么做粥",
+    "relevant_dishes": ["小米粥", "皮蛋瘦肉粥", "银耳莲子粥", "桂圆红枣粥", "米粥"],
+    "relevant_categories": ["汤品", "早餐"],
+    "query_type": "detail",
+    "difficulty": "easy"
+  },
+  {
+    "id": "r030",
+    "query": "推荐几道硬菜",
+    "relevant_dishes": ["红烧肉", "水煮鱼", "宫保鸡丁", "糖醋排骨", "梅菜扣肉"],
+    "relevant_categories": ["荤菜", "水产"],
+    "query_type": "list",
+    "difficulty": "hard"
+  }
+]

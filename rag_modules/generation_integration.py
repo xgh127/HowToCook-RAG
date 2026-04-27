@@ -251,31 +251,136 @@ class GenerationIntegrationModule:
     def generate_list_answer(self, query: str, context_docs: List[Document]) -> str:
         """
         生成列表式回答 - 适用于推荐类查询
+        调用LLM从候选菜品中筛选并生成推荐理由
 
         Args:
             query: 用户查询
-            context_docs: 上下文文档列表
+            context_docs: 上下文文档列表（已扩大召回，可能包含10+候选）
 
         Returns:
-            列表式回答
+            带推荐理由的列表式回答
         """
         if not context_docs:
             return "抱歉，没有找到相关的菜品信息。"
 
-        # 提取菜品名称
-        dish_names = []
+        # 按菜品去重，保留完整文档
+        seen_dishes = set()
+        unique_docs = []
         for doc in context_docs:
             dish_name = doc.metadata.get('dish_name', '未知菜品')
-            if dish_name not in dish_names:
-                dish_names.append(dish_name)
+            if dish_name not in seen_dishes:
+                seen_dishes.add(dish_name)
+                unique_docs.append(doc)
 
-        # 构建简洁的列表回答
-        if len(dish_names) == 1:
-            return f"为您推荐：{dish_names[0]}"
-        elif len(dish_names) <= 3:
-            return f"为您推荐以下菜品：\n" + "\n".join([f"{i+1}. {name}" for i, name in enumerate(dish_names)])
-        else:
-            return f"为您推荐以下菜品：\n" + "\n".join([f"{i+1}. {name}" for i, name in enumerate(dish_names[:3])]) + f"\n\n还有其他 {len(dish_names)-3} 道菜品可供选择。"
+        # 构建带元数据的上下文，让LLM做选择和推荐理由生成
+        context = self._build_list_context(unique_docs)
+
+        prompt = ChatPromptTemplate.from_template("""
+你是一位专业的美食推荐官。用户想要一些菜品推荐，我为你检索到了一批候选菜品。
+请你从中筛选出最合适的 **3-5道** 推荐给用户，并说明推荐理由。
+
+用户请求: {query}
+
+候选菜品信息（共{candidate_count}道）:
+{context}
+
+请按以下格式输出（每道菜独立成段）：
+
+🍽️ **菜名1**
+> 一句话推荐理由（结合用户请求，说明为什么推荐这道菜，如：这道菜做法简单，15分钟就能完成，非常适合新手）
+
+🍽️ **菜名2**
+> 推荐理由...
+
+要求：
+1. 从候选菜品中筛选，不要编造不在候选列表中的菜品
+2. 推荐理由要具体、有说服力，不要泛泛而谈
+3. 结合用户请求中的偏好（如"简单"、"快"、"素菜"等）来说明
+4. 如果某道菜特别符合用户需求，可以重点推荐
+5. 语气亲切自然，像朋友推荐一样
+6. 推荐 **3-5道** 即可，不要全部罗列
+
+推荐:""")
+
+        chain = (
+            {"query": RunnablePassthrough(), "context": lambda _: context, "candidate_count": lambda _: len(unique_docs)}
+            | prompt
+            | self.llm
+            | StrOutputParser()
+        )
+
+        return chain.invoke(query)
+
+    def _build_list_context(self, docs: List[Document]) -> str:
+        """
+        构建列表推荐的上下文字符串（包含菜品关键信息）
+
+        Args:
+            docs: 文档列表
+
+        Returns:
+            格式化的上下文字符串
+        """
+        if not docs:
+            return "暂无相关食谱信息。"
+
+        context_parts = []
+        for i, doc in enumerate(docs, 1):
+            metadata = doc.metadata
+            info_parts = [f"菜品{i}: {metadata.get('dish_name', '未知菜品')}"]
+
+            if 'category' in metadata:
+                info_parts.append(f"分类: {metadata['category']}")
+            if 'difficulty' in metadata:
+                info_parts.append(f"难度: {metadata['difficulty']}")
+            if 'cuisine' in metadata:
+                info_parts.append(f"菜系: {metadata['cuisine']}")
+
+            # 提取食材信息（从内容中找食材列表）
+            content = doc.page_content
+            ingredients = self._extract_ingredients(content)
+            if ingredients:
+                info_parts.append(f"主要食材: {', '.join(ingredients[:5])}")
+
+            # 提取简短描述（内容前100字）
+            desc = content[:100].replace('\n', ' ').strip()
+            if desc:
+                info_parts.append(f"简介: {desc}")
+
+            context_parts.append(" | ".join(info_parts))
+
+        return "\n".join(context_parts)
+
+    def _extract_ingredients(self, content: str) -> List[str]:
+        """
+        从内容中提取食材列表（简单启发式）
+
+        Args:
+            content: 文档内容
+
+        Returns:
+            食材名称列表
+        """
+        # 尝试匹配常见食材描述格式
+        import re
+        # 匹配 "食材: xxx、xxx" 或 "- xxx" 等格式
+        patterns = [
+            r'[食材原料配料][:：]\s*([^\n]+)',
+            r'[-•*]\s*([^\n]{2,20})\s*[:：]?\s*\d*',
+        ]
+
+        ingredients = []
+        for pattern in patterns:
+            matches = re.findall(pattern, content)
+            for match in matches:
+                # 分割顿号、逗号分隔的食材
+                items = re.split(r'[、,，\s]+', match.strip())
+                for item in items:
+                    item = item.strip()
+                    if item and len(item) >= 2 and len(item) <= 10:
+                        ingredients.append(item)
+
+        return ingredients[:10]  # 最多返回10个
 
     def generate_basic_answer_stream(self, query: str, context_docs: List[Document]):
         """

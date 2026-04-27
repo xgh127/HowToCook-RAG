@@ -188,6 +188,15 @@ class RecipeRAGSystem:
         if route_type == 'detail':
             print(f"[2026-04-28 00:57] Detail查询跳过过滤条件")
             relevant_chunks = self.retrieval_module.hybrid_search(rewritten_query, top_k=self.config.top_k)
+        elif route_type == 'list':
+            # [2026-04-28 01:27] List查询扩大召回数量，让大模型做最终选择
+            # 先检索更多候选（10个），再让LLM从中筛选并给出推荐理由
+            print(f"[2026-04-28 01:27] List查询扩大召回: top_k=10")
+            if filters:
+                print(f"[2026-04-27 18:05] 应用过滤条件: {filters}")
+                relevant_chunks = self.retrieval_module.metadata_filtered_search(rewritten_query, filters, top_k=10)
+            else:
+                relevant_chunks = self.retrieval_module.hybrid_search(rewritten_query, top_k=10)
         elif filters:
             print(f"[2026-04-27 18:05] 应用过滤条件: {filters}")
             relevant_chunks = self.retrieval_module.metadata_filtered_search(rewritten_query, filters, top_k=self.config.top_k)
